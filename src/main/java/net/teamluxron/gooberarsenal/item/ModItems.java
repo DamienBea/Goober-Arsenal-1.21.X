@@ -21,9 +21,9 @@ public class ModItems {
     public static void registerModItems() {
         GooberArsenal.LOGGER.info("Registering Mod Items for " + GooberArsenal.MOD_ID);
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(fabricItemGroupEntries -> {
-            fabricItemGroupEntries.add(OBSIDIAN_HILT);
-            fabricItemGroupEntries.add(OBSIDIAN_HANDGUARD);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries ->  {
+            entries.add(OBSIDIAN_HILT);
+            entries.add(OBSIDIAN_HANDGUARD);
         });
     }
 }
