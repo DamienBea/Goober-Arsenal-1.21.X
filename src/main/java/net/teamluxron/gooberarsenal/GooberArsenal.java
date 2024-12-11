@@ -2,6 +2,7 @@ package net.teamluxron.gooberarsenal;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.teamluxron.gooberarsenal.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,6 +12,6 @@ public class GooberArsenal implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItems.registerModItems();
 	}
 }
