@@ -13,6 +13,7 @@ public class ModItems {
     //Crafting Ingredients
     public static final Item OBSIDIAN_HILT = registerItem("obsidian_hilt", new Item(new Item.Settings()));
     public static final Item OBSIDIAN_HANDGUARD = registerItem("obsidian_handguard", new Item(new Item.Settings()));
+    public static final Item CAGITE_UPGRADE_TEMPLATE = registerItem("cagite_upgrade_template", new Item(new Item.Settings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(GooberArsenal.MOD_ID, name), item);
@@ -24,6 +25,7 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries ->  {
             entries.add(OBSIDIAN_HILT);
             entries.add(OBSIDIAN_HANDGUARD);
+            entries.add(CAGITE_UPGRADE_TEMPLATE);
         });
     }
 }

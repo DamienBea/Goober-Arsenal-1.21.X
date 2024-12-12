@@ -1,4 +1,9 @@
 {
   "item.gooberarsenal.obsidian_hilt": "Obsidian Hilt",
-  "item.gooberarsenal.obsidian_handguard": "Obsidian Handguard"
+  "item.gooberarsenal.obsidian_handguard": "Obsidian Handguard",
+  "item.gooberarsenal.cagite_upgrade_template": "NickCagite Upgrade Smithing Template",
+
+
+  "block.gooberarsenal.ancient_cage": "Ancient Cagite"
+
 }

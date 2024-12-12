@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "gooberarsenal:item/obsidian_handguard"
+    "layer0": "gooberarsenal:item/cagite_upgrade_template"
   }
 }
