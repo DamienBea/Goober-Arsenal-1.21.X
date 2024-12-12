@@ -25,6 +25,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.KEVIN_ORE)
+                .add(ModBlocks.KEVIN_BLOCK)
 
         ;
 

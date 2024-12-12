@@ -22,7 +22,8 @@ public class ModItemGroups {
                         entries.add(ModItems.CAGITE_UPGRADE_TEMPLATE);
                         entries.add(ModItems.CAGITE_SCRAP);
                         entries.add(ModItems.CAGITE_INGOT);
-                        entries.add(ModItems.KEVIN);
+                        entries.add(ModItems.KEVIN_SHARD);
+                        entries.add(ModItems.IRON_PLATE);
                     })
                     .build());
 

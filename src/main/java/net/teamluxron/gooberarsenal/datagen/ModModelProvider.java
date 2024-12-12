@@ -18,6 +18,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ANCIENT_CAGE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CAGITE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.KEVIN_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.KEVIN_BLOCK);
 
     }
 
@@ -26,9 +27,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.OBSIDIAN_HILT, Models.GENERATED);
         itemModelGenerator.register(ModItems.OBSIDIAN_HANDGUARD, Models.GENERATED);
 
-        itemModelGenerator.register(ModItems.KEVIN, Models.GENERATED);
+        itemModelGenerator.register(ModItems.KEVIN_SHARD, Models.GENERATED);
         itemModelGenerator.register(ModItems.CAGITE_SCRAP, Models.GENERATED);
         itemModelGenerator.register(ModItems.CAGITE_UPGRADE_TEMPLATE, Models.GENERATED);
         itemModelGenerator.register(ModItems.CAGITE_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.IRON_PLATE, Models.GENERATED);
     }
 }

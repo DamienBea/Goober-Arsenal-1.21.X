@@ -20,6 +20,12 @@ public class ModBlocks {
                     .requiresTool()
                     .sounds(BlockSoundGroup.STONE)
             ));
+    public static final Block KEVIN_BLOCK = registerBlock("kevin_block",
+            new Block(AbstractBlock.Settings.create()
+                    .strength(2f)
+                    .requiresTool()
+                    .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+            ));
     public static final Block ANCIENT_CAGE = registerBlock("ancient_cage",
             new Block(AbstractBlock.Settings.create()
                     .strength(4f)
@@ -49,6 +55,7 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
             entries.add(ModBlocks.KEVIN_ORE);
+            entries.add(ModBlocks.KEVIN_BLOCK);
             entries.add(ModBlocks.ANCIENT_CAGE);
             entries.add(ModBlocks.CAGITE_BLOCK);
         });

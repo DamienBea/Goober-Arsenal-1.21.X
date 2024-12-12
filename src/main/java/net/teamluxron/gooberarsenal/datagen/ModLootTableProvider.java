@@ -30,7 +30,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.CAGITE_BLOCK);
 
         //ore Drops
-        addDrop(ModBlocks.KEVIN_ORE, oreDrops(ModBlocks.KEVIN_ORE, ModItems.KEVIN));
+        addDrop(ModBlocks.KEVIN_ORE, oreDrops(ModBlocks.KEVIN_ORE, ModItems.KEVIN_SHARD));
 
         //Copper like ore drops
 //        addDrop(ModBlocks.KEVIN_ORE, multipleOreDrops(ModBlocks.KEVIN_ORE, ModItems.KEVIN, 3, 7));

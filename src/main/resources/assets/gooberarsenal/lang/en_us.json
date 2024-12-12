@@ -2,14 +2,15 @@
   "item.gooberarsenal.obsidian_hilt": "Obsidian Hilt",
   "item.gooberarsenal.obsidian_handguard": "Obsidian Handguard",
   "item.gooberarsenal.cagite_upgrade_template": "Goober Upgrade Template",
-  "item.gooberarsenal.kevin": "Kevin",
-  "item.gooberarsenal.cagerite_ingot": "Cagerite Ingot",
-  "item.gooberarsenal.cagerite_scrap": "Cagerite Scrap",
-
+  "item.gooberarsenal.kevin_shard": "Kevin Shard",
+  "item.gooberarsenal.cagite_ingot": "Cagite Ingot",
+  "item.gooberarsenal.cagite_scrap": "Cagite Scrap",
+  "item.gooberarsenal.iron_plate": "Iron Plate",
 
   "block.gooberarsenal.ancient_cage": "Ancient Cagite",
   "block.gooberarsenal.cagite_block": "Block of Cagite",
   "block.gooberarsenal.kevin_ore": "Kevin Ore",
+  "block.gooberarsenal.kevin_block": "Block of Kevin",
 
 
   "itemgroup.gooberarsenal.gooberarsenal_items": "Goober Arsenal Items",
