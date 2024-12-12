@@ -14,6 +14,9 @@ public class ModItems {
     public static final Item OBSIDIAN_HILT = registerItem("obsidian_hilt", new Item(new Item.Settings()));
     public static final Item OBSIDIAN_HANDGUARD = registerItem("obsidian_handguard", new Item(new Item.Settings()));
     public static final Item CAGITE_UPGRADE_TEMPLATE = registerItem("cagite_upgrade_template", new Item(new Item.Settings()));
+    public static final Item CAGITE_SCRAP = registerItem("cagite_scrap", new Item(new Item.Settings()));
+    public static final Item CAGITE_INGOT = registerItem("cagite_ingot", new Item(new Item.Settings()));
+    public static final Item KEVIN = registerItem("kevin", new Item(new Item.Settings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(GooberArsenal.MOD_ID, name), item);
@@ -23,9 +26,12 @@ public class ModItems {
         GooberArsenal.LOGGER.info("Registering Mod Items for " + GooberArsenal.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries ->  {
+            entries.add(KEVIN);
             entries.add(OBSIDIAN_HILT);
             entries.add(OBSIDIAN_HANDGUARD);
             entries.add(CAGITE_UPGRADE_TEMPLATE);
+            entries.add(CAGITE_SCRAP);
+            entries.add(CAGITE_INGOT);
         });
     }
 }

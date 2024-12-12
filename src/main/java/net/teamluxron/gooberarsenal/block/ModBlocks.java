@@ -13,12 +13,25 @@ import net.minecraft.util.Identifier;
 import net.teamluxron.gooberarsenal.GooberArsenal;
 
 public class ModBlocks {
+
+    public static final Block KEVIN_ORE = registerBlock("kevin_ore",
+            new Block(AbstractBlock.Settings.create()
+                    .strength(2f)
+                    .requiresTool()
+                    .sounds(BlockSoundGroup.STONE)
+            ));
     public static final Block ANCIENT_CAGE = registerBlock("ancient_cage",
             new Block(AbstractBlock.Settings.create()
                     .strength(4f)
                     .requiresTool()
                     .sounds(BlockSoundGroup.ANCIENT_DEBRIS)
-                    ));
+            ));
+    public static final Block CAGITE_BLOCK = registerBlock("cagite_block",
+            new Block(AbstractBlock.Settings.create()
+                    .strength(4f)
+                    .requiresTool()
+                    .sounds(BlockSoundGroup.NETHERITE)
+            ));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
@@ -35,7 +48,9 @@ public class ModBlocks {
         GooberArsenal.LOGGER.info("Registering Mod Blocks for" + GooberArsenal.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
+            entries.add(ModBlocks.KEVIN_ORE);
             entries.add(ModBlocks.ANCIENT_CAGE);
+            entries.add(ModBlocks.CAGITE_BLOCK);
         });
     }
 }
