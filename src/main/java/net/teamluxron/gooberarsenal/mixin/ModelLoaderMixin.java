@@ -21,16 +21,16 @@ import java.util.Map;
 @Mixin(ModelLoader.class)
 public abstract class ModelLoaderMixin {
     @Shadow
-    protected abstract void addModel(ModelIdentifier modelId);
+    protected abstract void loadItemModel(ModelIdentifier modelId);
 
     @Inject(method = "<init>", at = @At(value = "INVOKE",
             target = "Lnet/minecraft/client/render/model/ModelLoader;loadItemModel(Lnet/minecraft/client/util/ModelIdentifier;)V",
-            ordinal = 3, shift = At.Shift.AFTER))
+            ordinal = 1, shift = At.Shift.AFTER))
 
-    public void addFryingPan(BlockColors blockColors, Profiler profiler, Map<Identifier,
+    public void loadItemModel(BlockColors blockColors, Profiler profiler, Map<Identifier,
             JsonUnbakedModel> jsonUnbakedModels, Map<Identifier, List<BlockStatesLoader.SourceTrackedData>> blockStates,
                              CallbackInfo ci) {
-        this.addModel(new ModelIdentifier(GooberArsenal.MOD_ID, "frying_pan_3d", "inventory"));
+        this.loadItemModel(ModelIdentifier.ofInventoryVariant(Identifier.of(GooberArsenal.MOD_ID, "frying_pan_3d")));
     }
 
 

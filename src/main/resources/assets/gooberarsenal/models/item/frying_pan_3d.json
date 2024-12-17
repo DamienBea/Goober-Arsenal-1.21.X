@@ -92,6 +92,18 @@
 		"thirdperson_lefthand": {
 			"rotation": [75, 90, 16],
 			"translation": [4, 5, 8]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -68, -12],
+			"translation": [0, 8, 0]
+		},
+		"firstperson_lefthand": {
+			"rotation": [6, 96, 12],
+			"translation": [9.5, 7.75, -2.25]
+		},
+		"head": {
+			"translation": [6, 18.5, 5.75],
+			"scale": [1.5, 1.5, 1.5]
 		}
 	},
 	"groups": [
