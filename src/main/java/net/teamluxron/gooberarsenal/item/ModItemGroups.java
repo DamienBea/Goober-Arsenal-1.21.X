@@ -24,6 +24,8 @@ public class ModItemGroups {
                         entries.add(ModItems.CAGITE_INGOT);
                         entries.add(ModItems.KEVIN_SHARD);
                         entries.add(ModItems.IRON_PLATE);
+                        entries.add(ModItems.SWITCH_CARTRIDGE);
+                        //entries.add(ModItems.BANANADE);
                     })
                     .build());
 
@@ -36,6 +38,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.ANCIENT_CAGE);
                         entries.add(ModBlocks.CAGITE_BLOCK);
                         entries.add(ModBlocks.KEVIN_ORE);
+                        entries.add(ModBlocks.KEVIN_BLOCK);
                     })
                     .build());
 

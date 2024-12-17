@@ -32,5 +32,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.CAGITE_UPGRADE_TEMPLATE, Models.GENERATED);
         itemModelGenerator.register(ModItems.CAGITE_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.IRON_PLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SWITCH_CARTRIDGE, Models.GENERATED);
     }
 }

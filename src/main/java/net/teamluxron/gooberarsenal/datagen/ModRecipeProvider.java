@@ -40,7 +40,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.CAGITE_INGOT, RecipeCategory.DECORATIONS, ModBlocks.CAGITE_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.KEVIN_SHARD, RecipeCategory.DECORATIONS, ModBlocks.KEVIN_BLOCK);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.IRON_PLATE)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.IRON_PLATE, 3)
                 .pattern("RRR")
                 .input('R', Items.IRON_INGOT)
                 .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
