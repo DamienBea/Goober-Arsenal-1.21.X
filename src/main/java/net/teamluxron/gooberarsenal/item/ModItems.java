@@ -14,7 +14,22 @@ public class ModItems {
 
     public static final Item FRYING_PAN = registerItem("frying_pan",
             new SwordItem(ToolMaterials.IRON, new Item.Settings()
-                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.IRON, 5, -2.4f))));
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.IRON, 3, -2.4f))));
+    public static final Item STEEL_PIPE = registerItem("steel_pipe",
+            new SwordItem(ToolMaterials.IRON, new Item.Settings()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.IRON, 3, -2.4f))));
+    public static final Item CHAIR = registerItem("chair",
+            new SwordItem(ToolMaterials.IRON, new Item.Settings()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.IRON, 3, -2.4f))));
+    public static final Item DIAMOND_SWORDED = registerItem("diamond_sworded",
+            new SwordItem(ToolMaterials.DIAMOND, new Item.Settings()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.DIAMOND, 5, -2.4f))));
+    public static final Item BEE_BUNNY_BASHER = registerItem("bee_bunny_basher",
+            new SwordItem(ToolMaterials.DIAMOND, new Item.Settings()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.DIAMOND, 4, -2.4f))));
+    public static final Item STAHP_SIGN = registerItem("stahp_sign",
+            new SwordItem(ToolMaterials.DIAMOND, new Item.Settings()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.DIAMOND, 4, -2.4f))));
 
 
     //Crafting Ingredients
@@ -44,6 +59,11 @@ public static final Item SWITCH_CARTRIDGE = registerItem("switch_cartridge", new
             entries.add(IRON_PLATE);
             entries.add(SWITCH_CARTRIDGE);
             entries.add(FRYING_PAN);
+            entries.add(DIAMOND_SWORDED);
+            entries.add(BEE_BUNNY_BASHER);
+            entries.add(STAHP_SIGN);
+            entries.add(STEEL_PIPE);
+            entries.add(CHAIR);
         });
     }
 }

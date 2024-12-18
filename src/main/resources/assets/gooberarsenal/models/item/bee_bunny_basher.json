@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "gooberarsenal:item/bee_bunny_basher"
+  }
+}

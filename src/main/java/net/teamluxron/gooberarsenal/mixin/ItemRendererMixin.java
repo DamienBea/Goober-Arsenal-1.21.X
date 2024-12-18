@@ -23,6 +23,26 @@ public abstract class ItemRendererMixin {
             return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager()
                     .getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(GooberArsenal.MOD_ID, "frying_pan_3d")));
         }
+        if (stack.isOf(ModItems.DIAMOND_SWORDED) && renderMode != ModelTransformationMode.GUI) {
+            return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager()
+                    .getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(GooberArsenal.MOD_ID, "diamond_sworded_3d")));
+        }
+        if (stack.isOf(ModItems.BEE_BUNNY_BASHER) && renderMode != ModelTransformationMode.GUI) {
+            return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager()
+                    .getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(GooberArsenal.MOD_ID, "bee_bunny_basher_3d")));
+        }
+        if (stack.isOf(ModItems.STAHP_SIGN) && renderMode != ModelTransformationMode.GUI) {
+            return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager()
+                    .getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(GooberArsenal.MOD_ID, "stahp_sign_3d")));
+        }
+        if (stack.isOf(ModItems.STEEL_PIPE) && renderMode != ModelTransformationMode.GUI) {
+            return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager()
+                    .getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(GooberArsenal.MOD_ID, "steel_pipe_3d")));
+        }
+        if (stack.isOf(ModItems.CHAIR) && renderMode != ModelTransformationMode.GUI) {
+            return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager()
+                    .getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(GooberArsenal.MOD_ID, "chair_3d")));
+        }
         return value;
     }
 
