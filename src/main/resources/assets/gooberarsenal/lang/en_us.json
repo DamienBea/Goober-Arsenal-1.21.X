@@ -10,7 +10,13 @@
   "item.gooberarsenal.bee_bunny_basher": "Bee Bunny Basher",
   "item.gooberarsenal.stahp_sign": "Stahp Sign",
   "item.gooberarsenal.switch_cartridge": "Switch Cartridge",
-  "item.gooberarsenal.chair": "Metal Folding Chair",
+  "item.gooberarsenal.chair": "Steel Chair",
+  "item.gooberarsenal.steel_pipe": "Steel Pipe",
+  "item.gooberarsenal.wooden_bat": "Wooden Bat",
+  "item.gooberarsenal.iron_bat": "Iron Bat",
+  "item.gooberarsenal.golden_bat": "Golden Bat",
+  "item.gooberarsenal.diamond_bat": "Diamond Bat",
+  "item.gooberarsenal.netherite_bat": "Netherite Bat",
 
   "block.gooberarsenal.ancient_cage": "Ancient Cagite",
   "block.gooberarsenal.cagite_block": "Block of Cagite",
@@ -18,6 +24,7 @@
   "block.gooberarsenal.kevin_block": "Block of Kevin",
 
 
+  "itemgroup.gooberarsenal.gooberarsenal_weapons": "Goober Arsenal Weapons",
   "itemgroup.gooberarsenal.gooberarsenal_items": "Goober Arsenal Items",
   "itemgroup.gooberarsenal.gooberarsenal_blocks": "Goober Arsenal Blocks"
 

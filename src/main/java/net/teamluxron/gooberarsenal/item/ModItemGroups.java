@@ -11,6 +11,26 @@ import net.teamluxron.gooberarsenal.GooberArsenal;
 import net.teamluxron.gooberarsenal.block.ModBlocks;
 
 public class ModItemGroups {
+    public static final ItemGroup GOOBERARSENAL_WEAPONS = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(GooberArsenal.MOD_ID, "gooberarsenal_weapons"),
+            FabricItemGroup.builder()
+                    .icon(() -> new ItemStack(ModItems.FRYING_PAN))
+                    .displayName(Text.translatable("itemgroup.gooberarsenal.gooberarsenal_weapons"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModItems.BEE_BUNNY_BASHER);
+                        entries.add(ModItems.STAHP_SIGN);
+                        entries.add(ModItems.FRYING_PAN);
+                        entries.add(ModItems.STEEL_PIPE);
+                        entries.add(ModItems.CHAIR);
+                        entries.add(ModItems.WOODEN_BAT);
+                        entries.add(ModItems.IRON_BAT);
+                        entries.add(ModItems.GOLDEN_BAT);
+                        entries.add(ModItems.DIAMOND_BAT);
+                        entries.add(ModItems.NETHERITE_BAT);
+
+                        //entries.add(ModItems.BANANADE);
+                    })
+                    .build());
     public static final ItemGroup GOOBERARSENAL_ITEMS = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(GooberArsenal.MOD_ID, "gooberarsenal_items"),
             FabricItemGroup.builder()
@@ -25,14 +45,13 @@ public class ModItemGroups {
                         entries.add(ModItems.KEVIN_SHARD);
                         entries.add(ModItems.IRON_PLATE);
                         entries.add(ModItems.SWITCH_CARTRIDGE);
-                        //entries.add(ModItems.BANANADE);
                     })
                     .build());
 
     public static final ItemGroup GOOBERARSENAL_BLOCKS = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(GooberArsenal.MOD_ID, "gooberarsenal_blocks"),
             FabricItemGroup.builder()
-                    .icon(() -> new ItemStack(ModItems.CAGITE_UPGRADE_TEMPLATE))
+                    .icon(() -> new ItemStack(ModBlocks.KEVIN_BLOCK))
                     .displayName(Text.translatable("itemgroup.gooberarsenal.gooberarsenal_blocks"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.ANCIENT_CAGE);

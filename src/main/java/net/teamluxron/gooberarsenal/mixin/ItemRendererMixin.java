@@ -35,6 +35,15 @@ public abstract class ItemRendererMixin {
             return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager()
                     .getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(GooberArsenal.MOD_ID, "stahp_sign_3d")));
         }
+        //this code is to try to get it to be as a 2d model in other places but it dont wanna work so im letting it commented until i fix :)
+//        if (stack.isOf(ModItems.STAHP_SIGN) && renderMode != ModelTransformationMode.GROUND) {
+//            return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager()
+//                    .getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(GooberArsenal.MOD_ID, "stahp_sign_3d")));
+//        }
+//        if (stack.isOf(ModItems.STAHP_SIGN) && renderMode != ModelTransformationMode.FIRST_PERSON_LEFT_HAND) {
+//            return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager()
+//                    .getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(GooberArsenal.MOD_ID, "stahp_sign_3d")));
+//        }
         if (stack.isOf(ModItems.STEEL_PIPE) && renderMode != ModelTransformationMode.GUI) {
             return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager()
                     .getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(GooberArsenal.MOD_ID, "steel_pipe_3d")));
@@ -42,6 +51,27 @@ public abstract class ItemRendererMixin {
         if (stack.isOf(ModItems.CHAIR) && renderMode != ModelTransformationMode.GUI) {
             return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager()
                     .getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(GooberArsenal.MOD_ID, "chair_3d")));
+        }
+
+        if (stack.isOf(ModItems.WOODEN_BAT) && renderMode != ModelTransformationMode.GUI) {
+            return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager()
+                    .getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(GooberArsenal.MOD_ID, "wooden_bat_3d")));
+        }
+        if (stack.isOf(ModItems.IRON_BAT) && renderMode != ModelTransformationMode.GUI) {
+            return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager()
+                    .getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(GooberArsenal.MOD_ID, "iron_bat_3d")));
+        }
+        if (stack.isOf(ModItems.GOLDEN_BAT) && renderMode != ModelTransformationMode.GUI) {
+            return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager()
+                    .getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(GooberArsenal.MOD_ID, "golden_bat_3d")));
+        }
+        if (stack.isOf(ModItems.DIAMOND_BAT) && renderMode != ModelTransformationMode.GUI) {
+            return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager()
+                    .getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(GooberArsenal.MOD_ID, "diamond_bat_3d")));
+        }
+        if (stack.isOf(ModItems.NETHERITE_BAT) && renderMode != ModelTransformationMode.GUI) {
+            return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager()
+                    .getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(GooberArsenal.MOD_ID, "netherite_bat_3d")));
         }
         return value;
     }

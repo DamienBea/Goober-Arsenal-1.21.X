@@ -30,6 +30,21 @@ public class ModItems {
     public static final Item STAHP_SIGN = registerItem("stahp_sign",
             new SwordItem(ToolMaterials.DIAMOND, new Item.Settings()
                     .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.DIAMOND, 4, -2.4f))));
+    public static final Item WOODEN_BAT = registerItem("wooden_bat",
+            new SwordItem(ToolMaterials.WOOD, new Item.Settings()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.DIAMOND, 4, -2.4f))));
+    public static final Item IRON_BAT = registerItem("iron_bat",
+            new SwordItem(ToolMaterials.IRON, new Item.Settings()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.DIAMOND, 4, -2.4f))));
+    public static final Item GOLDEN_BAT = registerItem("golden_bat",
+            new SwordItem(ToolMaterials.GOLD, new Item.Settings()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.DIAMOND, 4, -2.4f))));
+    public static final Item DIAMOND_BAT = registerItem("diamond_bat",
+            new SwordItem(ToolMaterials.DIAMOND, new Item.Settings()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.DIAMOND, 4, -2.4f))));
+    public static final Item NETHERITE_BAT = registerItem("netherite_bat",
+            new SwordItem(ToolMaterials.NETHERITE, new Item.Settings()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.DIAMOND, 4, -2.4f))));
 
 
     //Crafting Ingredients
@@ -64,6 +79,11 @@ public static final Item SWITCH_CARTRIDGE = registerItem("switch_cartridge", new
             entries.add(STAHP_SIGN);
             entries.add(STEEL_PIPE);
             entries.add(CHAIR);
+            entries.add(WOODEN_BAT);
+            entries.add(IRON_BAT);
+            entries.add(GOLDEN_BAT);
+            entries.add(DIAMOND_BAT);
+            entries.add(NETHERITE_BAT);
         });
     }
 }

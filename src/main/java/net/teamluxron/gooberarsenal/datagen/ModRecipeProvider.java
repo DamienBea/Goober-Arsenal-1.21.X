@@ -2,6 +2,7 @@ package net.teamluxron.gooberarsenal.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
@@ -58,7 +59,48 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.CAGITE_SCRAP), conditionsFromItem(ModItems.CAGITE_SCRAP))
                 .offerTo(exporter, Identifier.of(GooberArsenal.MOD_ID, "cagite_from_scrap"));
 
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.OBSIDIAN_HILT)
+                .input(ModItems.OBSIDIAN_HANDGUARD)
+                .input(Items.BLAZE_ROD)
+                .criterion(hasItem(ModItems.OBSIDIAN_HANDGUARD), conditionsFromItem(Items.BLAZE_ROD))
+                .offerTo(exporter, Identifier.of(GooberArsenal.MOD_ID, "obsidian_hilt"));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.OBSIDIAN_HANDGUARD)
+//                .pattern("   ")
+                .pattern("OCO")
+//                .pattern("   ")
+                .input('O', Items.OBSIDIAN)
+                .input('C', ModItems.CAGITE_INGOT)
+                .criterion(hasItem(ModItems.CAGITE_INGOT), conditionsFromItem(Blocks.OBSIDIAN))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.STEEL_PIPE)
+                .pattern(" II")
+                .pattern(" I ")
+                .pattern(" D ")
+                .input('I', Items.IRON_INGOT)
+                .input('D', Items.DRIED_KELP)
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.DRIED_KELP))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CHAIR)
+                .pattern("PPP")
+                .pattern("PIP")
+                .pattern("P P")
+                .input('I', Items.IRON_INGOT)
+                .input('P', ModItems.IRON_PLATE)
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(ModItems.IRON_PLATE))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.FRYING_PAN)
+                .pattern(" I ")
+                .pattern("IPI")
+                .pattern("DI ")
+                .input('I', Items.IRON_INGOT)
+                .input('P', ModItems.IRON_PLATE)
+                .input('D', Items.DRIED_KELP)
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(ModItems.IRON_PLATE))
+                .offerTo(exporter);
 
 //        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.RAW_PINK_GARNET_BLOCK)
 //                .pattern("RRR")
