@@ -176,7 +176,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("KLK")
                 .pattern("BKG")
                 .input('L', ModItems.LIFE_SAVER)
-                .input('K', ModItems.KEVIN_SHARD)
+                .input('K', ModBlocks.KEVIN_BLOCK)
                 .input('B', Items.BLUE_DYE)
                 .input('G', Items.GREEN_DYE)
                 .criterion(hasItem(ModItems.GOOBER_UPGRADE_TEMPLATE), conditionsFromItem(ModItems.GOOBER_UPGRADE_TEMPLATE))

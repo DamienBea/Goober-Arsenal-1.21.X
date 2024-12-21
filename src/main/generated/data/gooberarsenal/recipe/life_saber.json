@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:blue_dye"
+    },
+    "G": {
+      "item": "minecraft:green_dye"
+    },
+    "K": {
+      "item": "gooberarsenal:kevin_block"
+    },
+    "L": {
+      "item": "gooberarsenal:life_saver"
+    }
+  },
+  "pattern": [
+    "GKB",
+    "KLK",
+    "BKG"
+  ],
+  "result": {
+    "count": 1,
+    "id": "gooberarsenal:life_saber"
+  }
+}
