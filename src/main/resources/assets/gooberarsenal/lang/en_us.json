@@ -32,7 +32,9 @@
   "itemgroup.gooberarsenal.gooberarsenal_weapons": "Goober Arsenal Weapons",
   "itemgroup.gooberarsenal.gooberarsenal_items": "Goober Arsenal Items",
   "itemgroup.gooberarsenal.gooberarsenal_blocks": "Goober Arsenal Blocks",
-  "itemgroup.gooberarsenal.gooberarsenal_consumables": "Goober Arsenal Consumables"
+  "itemgroup.gooberarsenal.gooberarsenal_consumables": "Goober Arsenal Consumables",
 
 
+  "tooltip.gooberarsenal.switch_cartridge": "Its coated in cyanide",
+  "tooltip.gooberarsenal.festive_axe": "Baby Approved"
 }
