@@ -27,6 +27,9 @@ public class ModItemGroups {
                         entries.add(ModItems.GOLDEN_BAT);
                         entries.add(ModItems.DIAMOND_BAT);
                         entries.add(ModItems.NETHERITE_BAT);
+                        entries.add(ModItems.OBSIDIAN_SWORD);
+                        entries.add(ModItems.SPOON);
+                        entries.add(ModItems.FESTIVE_AXE);
 
                         //entries.add(ModItems.BANANADE);
                     })
@@ -34,17 +37,17 @@ public class ModItemGroups {
     public static final ItemGroup GOOBERARSENAL_ITEMS = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(GooberArsenal.MOD_ID, "gooberarsenal_items"),
             FabricItemGroup.builder()
-                    .icon(() -> new ItemStack(ModItems.CAGITE_UPGRADE_TEMPLATE))
+                    .icon(() -> new ItemStack(ModItems.GOOBER_UPGRADE_TEMPLATE))
                     .displayName(Text.translatable("itemgroup.gooberarsenal.gooberarsenal_items"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.OBSIDIAN_HILT);
                         entries.add(ModItems.OBSIDIAN_HANDGUARD);
-                        entries.add(ModItems.CAGITE_UPGRADE_TEMPLATE);
+                        entries.add(ModItems.GOOBER_UPGRADE_TEMPLATE);
                         entries.add(ModItems.CAGITE_SCRAP);
                         entries.add(ModItems.CAGITE_INGOT);
                         entries.add(ModItems.KEVIN_SHARD);
                         entries.add(ModItems.IRON_PLATE);
-                        entries.add(ModItems.SWITCH_CARTRIDGE);
+                        entries.add(ModItems.LIFE_SAVER);
                     })
                     .build());
 
@@ -60,6 +63,18 @@ public class ModItemGroups {
                         entries.add(ModBlocks.KEVIN_BLOCK);
                     })
                     .build());
+
+    public static final ItemGroup GOOBERARSENAL_CONSUMABLES = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(GooberArsenal.MOD_ID, "gooberarsenal_consumables"),
+            FabricItemGroup.builder()
+                    .icon(() -> new ItemStack(ModItems.SWITCH_CARTRIDGE))
+                    .displayName(Text.translatable("itemgroup.gooberarsenal.gooberarsenal_consumables"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModItems.SWITCH_CARTRIDGE);
+                    })
+                    .build());
+
+
 
 
 

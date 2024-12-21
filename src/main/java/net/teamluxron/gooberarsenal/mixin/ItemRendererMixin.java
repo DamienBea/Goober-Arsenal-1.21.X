@@ -23,10 +23,6 @@ public abstract class ItemRendererMixin {
             return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager()
                     .getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(GooberArsenal.MOD_ID, "frying_pan_3d")));
         }
-        if (stack.isOf(ModItems.DIAMOND_SWORDED) && renderMode != ModelTransformationMode.GUI) {
-            return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager()
-                    .getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(GooberArsenal.MOD_ID, "diamond_sworded_3d")));
-        }
         if (stack.isOf(ModItems.BEE_BUNNY_BASHER) && renderMode != ModelTransformationMode.GUI) {
             return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager()
                     .getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(GooberArsenal.MOD_ID, "bee_bunny_basher_3d")));
@@ -72,6 +68,18 @@ public abstract class ItemRendererMixin {
         if (stack.isOf(ModItems.NETHERITE_BAT) && renderMode != ModelTransformationMode.GUI) {
             return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager()
                     .getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(GooberArsenal.MOD_ID, "netherite_bat_3d")));
+        }
+        if (stack.isOf(ModItems.OBSIDIAN_SWORD) && renderMode != ModelTransformationMode.GUI) {
+            return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager()
+                    .getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(GooberArsenal.MOD_ID, "obsidian_sword_3d")));
+        }
+        if (stack.isOf(ModItems.SPOON) && renderMode != ModelTransformationMode.GUI) {
+            return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager()
+                    .getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(GooberArsenal.MOD_ID, "spoon_3d")));
+        }
+        if (stack.isOf(ModItems.FESTIVE_AXE) && renderMode != ModelTransformationMode.GUI) {
+            return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager()
+                    .getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(GooberArsenal.MOD_ID, "festive_axe_3d")));
         }
         return value;
     }

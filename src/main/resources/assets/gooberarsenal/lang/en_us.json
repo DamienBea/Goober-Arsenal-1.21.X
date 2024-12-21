@@ -1,11 +1,12 @@
 {
   "item.gooberarsenal.obsidian_hilt": "Obsidian Hilt",
   "item.gooberarsenal.obsidian_handguard": "Obsidian Handguard",
-  "item.gooberarsenal.cagite_upgrade_template": "Goober Upgrade Template",
+  "item.gooberarsenal.goober_upgrade_template": "Goober Upgrade Template",
   "item.gooberarsenal.kevin_shard": "Kevin Shard",
   "item.gooberarsenal.cagite_ingot": "Cagite Ingot",
   "item.gooberarsenal.cagite_scrap": "Cagite Scrap",
   "item.gooberarsenal.iron_plate": "Iron Plate",
+  "item.gooberarsenal.life_saver": "Life Saver",
   "item.gooberarsenal.frying_pan": "Frying Pan",
   "item.gooberarsenal.bee_bunny_basher": "Bee Bunny Basher",
   "item.gooberarsenal.stahp_sign": "Stahp Sign",
@@ -17,6 +18,9 @@
   "item.gooberarsenal.golden_bat": "Golden Bat",
   "item.gooberarsenal.diamond_bat": "Diamond Bat",
   "item.gooberarsenal.netherite_bat": "Netherite Bat",
+  "item.gooberarsenal.obsidian_sword": "Obsidian Sword",
+  "item.gooberarsenal.spoon": "Comically Large Spoon",
+  "item.gooberarsenal.festive_axe": "Festive Axe",
 
   "block.gooberarsenal.ancient_cage": "Ancient Cagite",
   "block.gooberarsenal.cagite_block": "Block of Cagite",
@@ -26,6 +30,8 @@
 
   "itemgroup.gooberarsenal.gooberarsenal_weapons": "Goober Arsenal Weapons",
   "itemgroup.gooberarsenal.gooberarsenal_items": "Goober Arsenal Items",
-  "itemgroup.gooberarsenal.gooberarsenal_blocks": "Goober Arsenal Blocks"
+  "itemgroup.gooberarsenal.gooberarsenal_blocks": "Goober Arsenal Blocks",
+  "itemgroup.gooberarsenal.gooberarsenal_consumables": "Goober Arsenal Consumables"
+
 
 }
