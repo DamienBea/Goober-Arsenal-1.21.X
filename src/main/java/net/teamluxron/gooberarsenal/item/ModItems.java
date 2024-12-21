@@ -27,7 +27,14 @@ public class ModItems {
                     .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.IRON, 3, -2.4f))));
     public static final Item BEE_BUNNY_BASHER = registerItem("bee_bunny_basher",
             new SwordItem(ToolMaterials.NETHERITE, new Item.Settings()
-                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.NETHERITE, 4, -2.4f))));
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.NETHERITE, 4, -2.4f))){
+                @Override
+                public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+                    tooltip.add(Text.translatable("tooltip.gooberarsenal.bee_bunny_basher"));
+                    super.appendTooltip(stack, context, tooltip, type);
+                }
+
+            });
     public static final Item STAHP_SIGN = registerItem("stahp_sign",
             new SwordItem(ToolMaterials.NETHERITE, new Item.Settings()
                     .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.NETHERITE, 4, -2.4f))));
@@ -82,7 +89,10 @@ public class ModItems {
             tooltip.add(Text.translatable("tooltip.gooberarsenal.switch_cartridge"));
             super.appendTooltip(stack, context, tooltip, type);
         }
-    });
+
+    }
+
+    );
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(GooberArsenal.MOD_ID, name), item);
