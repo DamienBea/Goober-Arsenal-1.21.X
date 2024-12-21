@@ -86,6 +86,8 @@ public class ModItems {
     public static final Item KEVIN_SHARD = registerItem("kevin_shard", new Item(new Item.Settings()));
     public static final Item IRON_PLATE = registerItem("iron_plate", new Item(new Item.Settings()));
     public static final Item LIFE_SAVER = registerItem("life_saver", new Item(new Item.Settings()));
+    public static final Item RUBBER_CHICKEN = registerItem("rubber_chicken", new Item(new Item.Settings()));
+    public static final Item BUSINESS_CASE = registerItem("business_case", new Item(new Item.Settings()));
     public static final Item SWITCH_CARTRIDGE = registerItem("switch_cartridge", new Item(new Item.Settings().food(ModFoodComponents.SWITCH_CARTRIDGE)){
         @Override
         public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {

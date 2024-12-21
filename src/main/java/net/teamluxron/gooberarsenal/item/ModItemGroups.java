@@ -47,6 +47,8 @@ public class ModItemGroups {
                         entries.add(ModItems.KEVIN_SHARD);
                         entries.add(ModItems.CAGITE_SCRAP);
                         entries.add(ModItems.CAGITE_INGOT);
+                        entries.add(ModItems.BUSINESS_CASE);
+                        entries.add(ModItems.RUBBER_CHICKEN);
                         entries.add(ModItems.OBSIDIAN_HANDGUARD);
                         entries.add(ModItems.OBSIDIAN_HILT);
                         entries.add(ModItems.LIFE_SAVER);

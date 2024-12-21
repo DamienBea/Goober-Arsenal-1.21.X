@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_bamboo": {
+    "has_iron_plate": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:string"
+            "items": "gooberarsenal:iron_plate"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "gooberarsenal:kendo_stick"
+        "recipe": "gooberarsenal:business_case"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_bamboo"
+      "has_iron_plate"
     ]
   ],
   "rewards": {
     "recipes": [
-      "gooberarsenal:kendo_stick"
+      "gooberarsenal:business_case"
     ]
   }
 }

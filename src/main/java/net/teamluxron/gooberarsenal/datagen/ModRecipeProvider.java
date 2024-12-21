@@ -168,7 +168,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern(" I ")
                 .input('P', ModItems.IRON_PLATE)
                 .input('I', Items.IRON_INGOT)
-                .criterion(hasItem(ModItems.GOOBER_UPGRADE_TEMPLATE), conditionsFromItem(ModItems.GOOBER_UPGRADE_TEMPLATE))
+                .criterion(hasItem(ModItems.IRON_PLATE), conditionsFromItem(Items.IRON_INGOT))
                 .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.LIFE_SABER)
@@ -179,7 +179,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('K', ModBlocks.KEVIN_BLOCK)
                 .input('B', Items.BLUE_DYE)
                 .input('G', Items.GREEN_DYE)
-                .criterion(hasItem(ModItems.GOOBER_UPGRADE_TEMPLATE), conditionsFromItem(ModItems.GOOBER_UPGRADE_TEMPLATE))
+                .criterion(hasItem(ModItems.LIFE_SAVER), conditionsFromItem(ModBlocks.KEVIN_BLOCK))
                 .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.KENDO_STICK)
@@ -188,7 +188,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern(" S ")
                 .input('B', Items.BAMBOO)
                 .input('S', Items.STRING)
-                .criterion(hasItem(ModItems.GOOBER_UPGRADE_TEMPLATE), conditionsFromItem(ModItems.GOOBER_UPGRADE_TEMPLATE))
+                .criterion(hasItem(Items.BAMBOO), conditionsFromItem(Items.STRING))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BUSINESS_CASE)
+                .pattern(" P ")
+                .pattern("P P")
+                .pattern(" P ")
+                .input('P', ModItems.IRON_PLATE)
+                .criterion(hasItem(ModItems.IRON_PLATE), conditionsFromItem(ModItems.IRON_PLATE))
                 .offerTo(exporter);
 
 //        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.RAW_PINK_GARNET_BLOCK)
