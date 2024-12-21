@@ -31,15 +31,6 @@ public abstract class ItemRendererMixin {
             return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager()
                     .getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(GooberArsenal.MOD_ID, "stahp_sign_3d")));
         }
-        //this code is to try to get it to be as a 2d model in other places but it dont wanna work so im letting it commented until i fix :)
-//        if (stack.isOf(ModItems.STAHP_SIGN) && renderMode != ModelTransformationMode.GROUND) {
-//            return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager()
-//                    .getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(GooberArsenal.MOD_ID, "stahp_sign_3d")));
-//        }
-//        if (stack.isOf(ModItems.STAHP_SIGN) && renderMode != ModelTransformationMode.FIRST_PERSON_LEFT_HAND) {
-//            return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager()
-//                    .getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(GooberArsenal.MOD_ID, "stahp_sign_3d")));
-//        }
         if (stack.isOf(ModItems.STEEL_PIPE) && renderMode != ModelTransformationMode.GUI) {
             return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager()
                     .getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(GooberArsenal.MOD_ID, "steel_pipe_3d")));
@@ -78,6 +69,10 @@ public abstract class ItemRendererMixin {
                     .getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(GooberArsenal.MOD_ID, "spoon_3d")));
         }
         if (stack.isOf(ModItems.FESTIVE_AXE) && renderMode != ModelTransformationMode.GUI) {
+            return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager()
+                    .getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(GooberArsenal.MOD_ID, "festive_axe_3d")));
+        }
+        if (stack.isOf(ModItems.LIFE_SABER) && renderMode != ModelTransformationMode.GUI) {
             return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager()
                     .getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(GooberArsenal.MOD_ID, "festive_axe_3d")));
         }

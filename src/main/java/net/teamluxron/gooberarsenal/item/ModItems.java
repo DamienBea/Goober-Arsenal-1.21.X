@@ -51,7 +51,9 @@ public class ModItems {
     public static final Item FESTIVE_AXE = registerItem("festive_axe",
             new AxeItem(ToolMaterials.NETHERITE, new Item.Settings()
                     .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.NETHERITE, 4, -2.4f))));
-
+    public static final Item LIFE_SABER = registerItem("life_saber",
+            new SwordItem(ToolMaterials.DIAMOND, new Item.Settings()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.DIAMOND, 4, -2.4f))));
 
 
     //Crafting Ingredients

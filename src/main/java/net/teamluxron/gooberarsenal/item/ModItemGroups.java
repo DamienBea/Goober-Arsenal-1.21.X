@@ -28,6 +28,7 @@ public class ModItemGroups {
                         entries.add(ModItems.STEEL_PIPE);
                         entries.add(ModItems.CHAIR);
                         entries.add(ModItems.FESTIVE_AXE);
+                        entries.add(ModItems.LIFE_SABER);
                         entries.add(ModItems.OBSIDIAN_SWORD);
                         entries.add(ModItems.STAHP_SIGN);
 
