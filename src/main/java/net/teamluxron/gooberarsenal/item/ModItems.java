@@ -72,8 +72,11 @@ public class ModItems {
             new SwordItem(ToolMaterials.DIAMOND, new Item.Settings()
                     .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.DIAMOND, 4, -2.4f))));
     public static final Item KENDO_STICK = registerItem("kendo_stick",
-            new SwordItem(ToolMaterials.DIAMOND, new Item.Settings()
+            new SwordItem(ToolMaterials.WOOD, new Item.Settings()
                     .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.WOOD, 4, -2.4f))));
+    public static final Item SLAPSTICK_SWORD = registerItem("slapstick_sword",
+            new SwordItem(ToolMaterials.NETHERITE, new Item.Settings()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.NETHERITE, 4, -2.4f))));
 
 
     //Crafting Ingredients

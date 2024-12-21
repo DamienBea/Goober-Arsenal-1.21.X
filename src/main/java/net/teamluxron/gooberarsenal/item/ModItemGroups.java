@@ -31,6 +31,7 @@ public class ModItemGroups {
                         entries.add(ModItems.FESTIVE_AXE);
                         entries.add(ModItems.LIFE_SABER);
                         entries.add(ModItems.OBSIDIAN_SWORD);
+                        entries.add(ModItems.SLAPSTICK_SWORD);
                         entries.add(ModItems.STAHP_SIGN);
 
                         //entries.add(ModItems.BANANADE);
