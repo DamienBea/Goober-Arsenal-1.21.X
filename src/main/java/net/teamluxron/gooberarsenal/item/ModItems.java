@@ -71,6 +71,9 @@ public class ModItems {
     public static final Item LIFE_SABER = registerItem("life_saber",
             new SwordItem(ToolMaterials.DIAMOND, new Item.Settings()
                     .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.DIAMOND, 4, -2.4f))));
+    public static final Item KENDO_STICK = registerItem("kendo_stick",
+            new SwordItem(ToolMaterials.DIAMOND, new Item.Settings()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.WOOD, 4, -2.4f))));
 
 
     //Crafting Ingredients

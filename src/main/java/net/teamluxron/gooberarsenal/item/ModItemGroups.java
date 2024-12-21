@@ -23,6 +23,7 @@ public class ModItemGroups {
                         entries.add(ModItems.DIAMOND_BAT);
                         entries.add(ModItems.NETHERITE_BAT);
                         entries.add(ModItems.BEE_BUNNY_BASHER);
+                        entries.add(ModItems.KENDO_STICK);
                         entries.add(ModItems.SPOON);
                         entries.add(ModItems.FRYING_PAN);
                         entries.add(ModItems.STEEL_PIPE);

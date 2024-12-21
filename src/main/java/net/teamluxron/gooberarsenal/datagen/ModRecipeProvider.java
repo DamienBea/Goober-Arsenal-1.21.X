@@ -171,6 +171,26 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.GOOBER_UPGRADE_TEMPLATE), conditionsFromItem(ModItems.GOOBER_UPGRADE_TEMPLATE))
                 .offerTo(exporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.LIFE_SABER)
+                .pattern("GKB")
+                .pattern("KLK")
+                .pattern("BKG")
+                .input('L', ModItems.LIFE_SAVER)
+                .input('K', ModItems.KEVIN_SHARD)
+                .input('B', Items.BLUE_DYE)
+                .input('G', Items.GREEN_DYE)
+                .criterion(hasItem(ModItems.GOOBER_UPGRADE_TEMPLATE), conditionsFromItem(ModItems.GOOBER_UPGRADE_TEMPLATE))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.KENDO_STICK)
+                .pattern(" B ")
+                .pattern(" B ")
+                .pattern(" S ")
+                .input('B', Items.BAMBOO)
+                .input('S', Items.STRING)
+                .criterion(hasItem(ModItems.GOOBER_UPGRADE_TEMPLATE), conditionsFromItem(ModItems.GOOBER_UPGRADE_TEMPLATE))
+                .offerTo(exporter);
+
 //        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.RAW_PINK_GARNET_BLOCK)
 //                .pattern("RRR")
 //                .pattern("RRR")

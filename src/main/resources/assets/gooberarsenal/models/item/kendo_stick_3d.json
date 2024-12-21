@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "kendo_stick_3d",
-		"particle": "kendo_stick_3d"
+		"0": "gooberarsenal:item/kendo_stick_3d",
+		"particle": "gooberarsenal:item/kendo_stick_3d"
 	},
 	"elements": [
 		{
