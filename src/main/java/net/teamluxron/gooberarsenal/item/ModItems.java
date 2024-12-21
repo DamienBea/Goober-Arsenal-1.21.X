@@ -45,7 +45,6 @@ public class ModItems {
     public static final Item OBSIDIAN_SWORD = registerItem("obsidian_sword",
             new SwordItem(ToolMaterials.DIAMOND, new Item.Settings()
                     .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.DIAMOND, 4, -2.4f))));
-
     public static final Item SPOON = registerItem("spoon",
             new ShovelItem(ToolMaterials.IRON, new Item.Settings()
                     .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.IRON, 4, -2.4f))));
@@ -65,7 +64,7 @@ public class ModItems {
     public static final Item KEVIN_SHARD = registerItem("kevin_shard", new Item(new Item.Settings()));
     public static final Item IRON_PLATE = registerItem("iron_plate", new Item(new Item.Settings()));
     public static final Item LIFE_SAVER = registerItem("life_saver", new Item(new Item.Settings()));
-public static final Item SWITCH_CARTRIDGE = registerItem("switch_cartridge", new Item(new Item.Settings().food(ModFoodComponents.SWITCH_CARTRIDGE)));
+    public static final Item SWITCH_CARTRIDGE = registerItem("switch_cartridge", new Item(new Item.Settings().food(ModFoodComponents.SWITCH_CARTRIDGE)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(GooberArsenal.MOD_ID, name), item);
