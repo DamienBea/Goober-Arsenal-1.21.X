@@ -74,7 +74,7 @@ public abstract class ItemRendererMixin {
         }
         if (stack.isOf(ModItems.LIFE_SABER) && renderMode != ModelTransformationMode.GUI) {
             return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager()
-                    .getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(GooberArsenal.MOD_ID, "festive_axe_3d")));
+                    .getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(GooberArsenal.MOD_ID, "life_saber_3d")));
         }
         return value;
     }
