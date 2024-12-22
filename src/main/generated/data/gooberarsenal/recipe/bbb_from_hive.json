@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:beehive"
+  },
+  "base": {
+    "item": "gooberarsenal:netherite_bat"
+  },
+  "result": {
+    "count": 1,
+    "id": "gooberarsenal:bee_bunny_basher"
+  },
+  "template": {
+    "item": "gooberarsenal:goober_upgrade_template"
+  }
+}

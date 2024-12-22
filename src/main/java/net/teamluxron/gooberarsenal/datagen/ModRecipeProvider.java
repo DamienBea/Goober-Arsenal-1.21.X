@@ -2,26 +2,24 @@ package net.teamluxron.gooberarsenal.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.WoodType;
-import net.minecraft.data.server.recipe.RecipeExporter;
-import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
-import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
-import net.minecraft.data.server.recipe.SmithingTrimRecipeJsonBuilder;
+import net.minecraft.command.argument.ItemStringReader;
+import net.minecraft.data.server.recipe.*;
 import net.minecraft.item.ItemConvertible;
-import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
-import net.minecraft.registry.tag.TagEntry;
-import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 import net.teamluxron.gooberarsenal.GooberArsenal;
 import net.teamluxron.gooberarsenal.block.ModBlocks;
 import net.teamluxron.gooberarsenal.item.ModItems;
 
+
+import javax.xml.transform.Result;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
@@ -45,6 +43,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 Blocks.STRIPPED_WARPED_STEM
                 );
 
+        //Smelting Recipes
         List<ItemConvertible> ANCIENT_CAGITE_SMELTABLE = List.of(ModBlocks.ANCIENT_CAGE);
         offerSmelting(exporter, ANCIENT_CAGITE_SMELTABLE, RecipeCategory.MISC, ModItems.CAGITE_SCRAP,
                 0.5f, 200, "ancient_cagite_smeltable");
@@ -60,13 +59,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.CAGITE_INGOT, RecipeCategory.DECORATIONS, ModBlocks.CAGITE_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.KEVIN_SHARD, RecipeCategory.DECORATIONS, ModBlocks.KEVIN_BLOCK);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.IRON_PLATE, 3)
-                .pattern("RRR")
-                .input('R', Items.IRON_INGOT)
-                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
-                .offerTo(exporter);
-
-
+        //Shapless Recipes
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CAGITE_INGOT, 9)
                 .input(ModBlocks.CAGITE_BLOCK)
                 .criterion(hasItem(ModBlocks.CAGITE_BLOCK), conditionsFromItem(ModBlocks.CAGITE_BLOCK))
@@ -83,6 +76,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input(Items.BLAZE_ROD)
                 .criterion(hasItem(ModItems.OBSIDIAN_HANDGUARD), conditionsFromItem(Items.BLAZE_ROD))
                 .offerTo(exporter, Identifier.of(GooberArsenal.MOD_ID, "obsidian_hilt"));
+
+        //Shaped Recipes
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.IRON_PLATE, 3)
+                .pattern("RRR")
+                .input('R', Items.IRON_INGOT)
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.OBSIDIAN_HANDGUARD)
 //                .pattern("   ")
@@ -199,51 +199,88 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.IRON_PLATE), conditionsFromItem(ModItems.IRON_PLATE))
                 .offerTo(exporter);
 
-//        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.RAW_PINK_GARNET_BLOCK)
-//                .pattern("RRR")
-//                .pattern("RRR")
-//                .pattern("RRR")
-//                .input('R', ModItems.RAW_PINK_GARNET)
-//                .criterion(hasItem(ModItems.RAW_PINK_GARNET), conditionsFromItem(ModItems.RAW_PINK_GARNET))
-//                .offerTo(exporter);
-//
-//        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RAW_PINK_GARNET, 9)
-//                .input(ModBlocks.RAW_PINK_GARNET_BLOCK)
-//                .criterion(hasItem(ModBlocks.RAW_PINK_GARNET_BLOCK), conditionsFromItem(ModBlocks.RAW_PINK_GARNET_BLOCK))
-//                .offerTo(exporter);
-//
-//        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RAW_PINK_GARNET, 32)
-//                .input(ModBlocks.MAGIC_BLOCK)
-//                .criterion(hasItem(ModBlocks.MAGIC_BLOCK), conditionsFromItem(ModBlocks.MAGIC_BLOCK))
-//                .offerTo(exporter, Identifier.of(TutorialMod.MOD_ID, "raw_pink_garnet_from_magic_block"));
-//
-//        SmithingTrimRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.GOOBER_UPGRADE_TEMPLATE),
-//                        Ingredient.ofItems(ModItems.OBSIDIAN_HILT, ModItems.OBSIDIAN_SWORD),
-//                Ingredient.ofItems(Items.LAVA_BUCKET), RecipeCategory.MISC)
-//                .criterion(hasItem(ModItems.GOOBER_UPGRADE_TEMPLATE), conditionsFromItem(ModItems.GOOBER_UPGRADE_TEMPLATE));
-//
-//        SmithingTrimRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.GOOBER_UPGRADE_TEMPLATE),
-//                        Ingredient.ofItems(ModItems.NETHERITE_BAT, ModItems.BEE_BUNNY_BASHER),
-//                        Ingredient.ofItems(Blocks.BEE_NEST), RecipeCategory.MISC)
-//                .criterion(hasItem(ModItems.GOOBER_UPGRADE_TEMPLATE), conditionsFromItem(ModItems.GOOBER_UPGRADE_TEMPLATE));
-//
-//        SmithingTrimRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.GOOBER_UPGRADE_TEMPLATE),
-//                        Ingredient.ofItems(ModItems.NETHERITE_BAT, ModItems.BEE_BUNNY_BASHER),
-//                        Ingredient.ofItems(Blocks.BEEHIVE), RecipeCategory.MISC)
-//                .criterion(hasItem(ModItems.GOOBER_UPGRADE_TEMPLATE), conditionsFromItem(ModItems.GOOBER_UPGRADE_TEMPLATE));
+        //Smithing Recipes
+        SmithingTransformRecipeJsonBuilder.create(
+                Ingredient.ofItems(ModItems.GOOBER_UPGRADE_TEMPLATE),
+                Ingredient.ofItems(ModItems.NETHERITE_BAT),
+                Ingredient.ofItems(Items.BEE_NEST),
+                RecipeCategory.MISC,
+                ModItems.BEE_BUNNY_BASHER)
+                .criterion(hasItem(ModItems.NETHERITE_BAT), conditionsFromItem(ModItems.NETHERITE_BAT))
+                .offerTo(exporter, "bbb_from_nest");
 
-        SmithingTrimRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.GOOBER_UPGRADE_TEMPLATE),
-                        Ingredient.ofItems(ModItems.NETHERITE_BAT, ModItems.BEE_BUNNY_BASHER),
-                        Ingredient.ofItems(Blocks.BEEHIVE),
-                        RecipeCategory.MISC
-                )
-                .criterion(hasItem(ModItems.GOOBER_UPGRADE_TEMPLATE), conditionsFromItem(ModItems.GOOBER_UPGRADE_TEMPLATE))
-                .offerTo(exporter, Identifier.of(GooberArsenal.MOD_ID, "bbb_from_feet"));
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.GOOBER_UPGRADE_TEMPLATE),
+                        Ingredient.ofItems(ModItems.NETHERITE_BAT),
+                        Ingredient.ofItems(Items.BEEHIVE),
+                        RecipeCategory.MISC,
+                        ModItems.BEE_BUNNY_BASHER)
+                .criterion(hasItem(ModItems.NETHERITE_BAT), conditionsFromItem(ModItems.NETHERITE_BAT))
+                .offerTo(exporter, "bbb_from_hive");
 
-//        SmithingTrimRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.GOOBER_UPGRADE_TEMPLATE),
-//                        Ingredient.ofItems(ModItems.NETHERITE_BAT),
-//                        Ingredient.ofItems(Items.RABBIT_FOOT), RecipeCategory.MISC), ModItems.BEE_BUNNY_BASHER;
-//                .offerTo(exporter, new Identifier(GooberArsenal.MOD_ID, "bbb_from_feet"));
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.GOOBER_UPGRADE_TEMPLATE),
+                        Ingredient.ofItems(ModItems.NETHERITE_BAT),
+                        Ingredient.ofItems(Items.RABBIT_FOOT),
+                        RecipeCategory.MISC,
+                        ModItems.BEE_BUNNY_BASHER)
+                .criterion(hasItem(ModItems.NETHERITE_BAT), conditionsFromItem(ModItems.NETHERITE_BAT))
+                .offerTo(exporter, "bbb_from_foot");
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.GOOBER_UPGRADE_TEMPLATE),
+                        Ingredient.ofItems(ModItems.OBSIDIAN_HILT),
+                        Ingredient.ofItems(Items.LAVA_BUCKET),
+                        RecipeCategory.MISC,
+                        ModItems.OBSIDIAN_SWORD)
+                .criterion(hasItem(ModItems.OBSIDIAN_HANDGUARD), conditionsFromItem(ModItems.OBSIDIAN_HANDGUARD))
+                .offerTo(exporter, "obsidian_sword_smithing");
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.GOOBER_UPGRADE_TEMPLATE),
+                        Ingredient.ofItems(Items.NETHERITE_SWORD),
+                        Ingredient.ofItems(ModItems.RUBBER_CHICKEN),
+                        RecipeCategory.MISC,
+                        ModItems.SLAPSTICK_SWORD)
+                .criterion(hasItem(ModItems.RUBBER_CHICKEN), conditionsFromItem(ModItems.RUBBER_CHICKEN))
+                .offerTo(exporter, "slapstick_sword_smithing");
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.GOOBER_UPGRADE_TEMPLATE),
+                        Ingredient.ofItems(Items.DIAMOND_AXE),
+                        Ingredient.ofItems(Items.CAKE),
+                        RecipeCategory.MISC,
+                        ModItems.FESTIVE_AXE)
+                .criterion(hasItem(Items.DIAMOND_AXE), conditionsFromItem(Items.DIAMOND_AXE))
+                .offerTo(exporter, "festive_axe_smithing");
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.ofItems(ModItems.DIAMOND_BAT),
+                        Ingredient.ofItems(Items.NETHERITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.NETHERITE_BAT)
+                .criterion(hasItem(ModItems.DIAMOND_BAT), conditionsFromItem(ModItems.DIAMOND_BAT))
+                .offerTo(exporter, "netherite_bat_smithing");
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.GOOBER_UPGRADE_TEMPLATE),
+                        Ingredient.ofItems(ModItems.STEEL_PIPE),
+                        Ingredient.ofItems(ModItems.CAGITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.STAHP_SIGN)
+                .criterion(hasItem(ModItems.CAGITE_INGOT), conditionsFromItem(ModItems.CAGITE_INGOT))
+                .offerTo(exporter, "stahp_sign_smithing");
+
+
+
+
+
+
+
+
+
+
 
 
 
