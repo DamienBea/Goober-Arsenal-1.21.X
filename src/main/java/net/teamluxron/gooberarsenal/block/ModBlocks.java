@@ -20,6 +20,12 @@ public class ModBlocks {
                     .requiresTool()
                     .sounds(BlockSoundGroup.STONE)
             ));
+    public static final Block DEEPSLATE_KEVIN_ORE = registerBlock("deepslate_kevin_ore",
+            new Block(AbstractBlock.Settings.create()
+                    .strength(2f)
+                    .requiresTool()
+                    .sounds(BlockSoundGroup.STONE)
+            ));
     public static final Block KEVIN_BLOCK = registerBlock("kevin_block",
             new Block(AbstractBlock.Settings.create()
                     .strength(2f)
@@ -55,6 +61,7 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
             entries.add(ModBlocks.KEVIN_ORE);
+            entries.add(ModBlocks.DEEPSLATE_KEVIN_ORE);
             entries.add(ModBlocks.KEVIN_BLOCK);
             entries.add(ModBlocks.ANCIENT_CAGE);
             entries.add(ModBlocks.CAGITE_BLOCK);

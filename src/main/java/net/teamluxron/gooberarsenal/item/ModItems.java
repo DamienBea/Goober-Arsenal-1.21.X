@@ -36,7 +36,7 @@ public class ModItems {
 
             });
     public static final Item STAHP_SIGN = registerItem("stahp_sign",
-            new SwordItem(ToolMaterials.NETHERITE, new Item.Settings()
+            new AxeItem(ToolMaterials.NETHERITE, new Item.Settings()
                     .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.NETHERITE, 4, -2.4f))));
     public static final Item WOODEN_BAT = registerItem("wooden_bat",
             new SwordItem(ToolMaterials.WOOD, new Item.Settings()

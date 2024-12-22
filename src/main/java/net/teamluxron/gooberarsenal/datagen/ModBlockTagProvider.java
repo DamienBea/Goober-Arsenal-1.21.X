@@ -18,6 +18,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.KEVIN_ORE)
+                .add(ModBlocks.DEEPSLATE_KEVIN_ORE)
                 .add(ModBlocks.ANCIENT_CAGE)
                 .add(ModBlocks.CAGITE_BLOCK)
 
@@ -25,6 +26,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.KEVIN_ORE)
+                .add(ModBlocks.DEEPSLATE_KEVIN_ORE)
                 .add(ModBlocks.KEVIN_BLOCK)
 
         ;

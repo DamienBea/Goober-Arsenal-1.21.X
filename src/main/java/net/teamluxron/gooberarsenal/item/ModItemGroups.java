@@ -63,6 +63,7 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.gooberarsenal.gooberarsenal_blocks"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.KEVIN_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_KEVIN_ORE);
                         entries.add(ModBlocks.KEVIN_BLOCK);
                         entries.add(ModBlocks.ANCIENT_CAGE);
                         entries.add(ModBlocks.CAGITE_BLOCK);
