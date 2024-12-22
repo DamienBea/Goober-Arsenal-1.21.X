@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "minecraft:dried_kelp"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "P": {
+      "item": "gooberarsenal:iron_plate"
+    }
+  },
+  "pattern": [
+    " I ",
+    "IPI",
+    "DI "
+  ],
+  "result": {
+    "count": 1,
+    "id": "gooberarsenal:frying_pan"
+  }
+}

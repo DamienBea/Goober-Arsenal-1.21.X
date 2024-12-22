@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "gooberarsenal:obsidian_handguard"
+    },
+    {
+      "item": "minecraft:blaze_rod"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "gooberarsenal:obsidian_hilt"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_kevin_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "gooberarsenal:kevin_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:kevin_shard_from_smelting_kevin_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_kevin_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:kevin_shard_from_smelting_kevin_ore"
+    ]
+  }
+}

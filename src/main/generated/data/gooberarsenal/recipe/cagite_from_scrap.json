@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "gooberarsenal:cagite_scrap"
+    },
+    {
+      "item": "gooberarsenal:cagite_scrap"
+    },
+    {
+      "item": "gooberarsenal:cagite_scrap"
+    },
+    {
+      "item": "gooberarsenal:cagite_scrap"
+    },
+    {
+      "item": "gooberarsenal:kevin_shard"
+    },
+    {
+      "item": "gooberarsenal:kevin_shard"
+    },
+    {
+      "item": "gooberarsenal:kevin_shard"
+    },
+    {
+      "item": "gooberarsenal:kevin_shard"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "gooberarsenal:cagite_ingot"
+  }
+}

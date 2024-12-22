@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "P": {
+      "item": "gooberarsenal:iron_plate"
+    }
+  },
+  "pattern": [
+    "PPP",
+    "PIP",
+    "P P"
+  ],
+  "result": {
+    "count": 1,
+    "id": "gooberarsenal:chair"
+  }
+}

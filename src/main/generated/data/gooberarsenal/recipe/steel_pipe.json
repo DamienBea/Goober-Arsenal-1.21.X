@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "minecraft:dried_kelp"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    " II",
+    " I ",
+    " D "
+  ],
+  "result": {
+    "count": 1,
+    "id": "gooberarsenal:steel_pipe"
+  }
+}
