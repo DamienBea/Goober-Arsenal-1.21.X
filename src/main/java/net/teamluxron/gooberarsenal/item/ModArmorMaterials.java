@@ -24,7 +24,7 @@ public class ModArmorMaterials {
                 map.put(ArmorItem.Type.HELMET, 3);
                 map.put(ArmorItem.Type.BODY, 12);
             }), 20, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, () -> Ingredient.ofItems(ModItems.CAGITE_INGOT),
-                    List.of(new ArmorMaterial.Layer(Identifier.of(GooberArsenal.MOD_ID, "cagite"))), 0,0));
+                    List.of(new ArmorMaterial.Layer(Identifier.of(GooberArsenal.MOD_ID, "cagite"))), 3 ,0));
 
 
     public static RegistryEntry<ArmorMaterial> registerArmorMaterial(String name, Supplier<ArmorMaterial> material) {
