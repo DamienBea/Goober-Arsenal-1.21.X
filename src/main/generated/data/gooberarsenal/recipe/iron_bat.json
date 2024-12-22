@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "minecraft:dried_kelp"
+    },
+    "L": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    "  L",
+    " L ",
+    "D  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "gooberarsenal:iron_bat"
+  }
+}

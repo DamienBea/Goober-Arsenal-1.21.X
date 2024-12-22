@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "gooberarsenal:cagite_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "gooberarsenal:cagite_ingot"
+  }
+}

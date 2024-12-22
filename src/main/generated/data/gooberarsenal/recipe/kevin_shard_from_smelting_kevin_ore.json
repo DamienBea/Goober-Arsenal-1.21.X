@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.5,
+  "group": "kevin_smeltable",
+  "ingredient": {
+    "item": "gooberarsenal:kevin_ore"
+  },
+  "result": {
+    "id": "gooberarsenal:kevin_shard"
+  }
+}

@@ -16,20 +16,20 @@ import net.teamluxron.gooberarsenal.GooberArsenal;
 import java.util.List;
 
 public class ModPlacedFeatures {
-//    public static final RegistryKey<PlacedFeature> KEVIN_ORE_PLACED_KEY = registerKey("kevin_ore_placed");
-//    public static final RegistryKey<PlacedFeature> ANCIENT_CAGITE_PLACED_KEY = registerKey("ancient_cagite_placed");
+    public static final RegistryKey<PlacedFeature> KEVIN_ORE_PLACED_KEY = registerKey("kevin_ore_placed");
+    public static final RegistryKey<PlacedFeature> ANCIENT_CAGITE_PLACED_KEY = registerKey("ancient_cagite_placed");
 
 
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatures = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
-//        register(context, KEVIN_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.KEVIN_ORE_KEY),
-//                ModOrePlacement.modifiersWithCount(7,
-//                        HeightRangePlacementModifier.uniform(YOffset.fixed(-100), YOffset.fixed(14))));
-//        register(context, ANCIENT_CAGITE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.ANCIENT_CAGITE_KEY),
-//                ModOrePlacement.modifiersWithCount(2,
-//                        HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(12))));
+        register(context, KEVIN_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.KEVIN_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(7,
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-100), YOffset.fixed(14))));
+        register(context, ANCIENT_CAGITE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.ANCIENT_CAGITE_KEY),
+                ModOrePlacement.modifiersWithCount(2,
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(12))));
 
 
     }

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:smithing_trim",
+  "addition": {
+    "item": "minecraft:beehive"
+  },
+  "base": [
+    {
+      "item": "gooberarsenal:netherite_bat"
+    },
+    {
+      "item": "gooberarsenal:bee_bunny_basher"
+    }
+  ],
+  "template": {
+    "item": "gooberarsenal:goober_upgrade_template"
+  }
+}

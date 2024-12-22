@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.5,
+  "group": "ancient_cagite_smeltable",
+  "ingredient": {
+    "item": "gooberarsenal:ancient_cage"
+  },
+  "result": {
+    "id": "gooberarsenal:cagite_scrap"
+  }
+}
