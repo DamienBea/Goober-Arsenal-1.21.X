@@ -1,4 +1,4 @@
-// 1.21.1	2024-12-22T12:30:18.5071271	Goober Arsenal/Model Definitions
+// 1.21.1	2024-12-22T16:10:28.4057913	Goober Arsenal/Model Definitions
 b1ee2882c9d3a2353cf2d3b50ee783e5cc35b5b1 assets\gooberarsenal\models\block\kevin_block.json
 39ec5897f6b45740318d670e39d15d4c7d7591d4 assets\gooberarsenal\models\item\iron_plate.json
 e24d1461b31109626a195f909440857cc2824630 assets\gooberarsenal\models\item\obsidian_handguard.json
@@ -22,7 +22,7 @@ ced357d65112b7d426efd7629ea53a12ec5f929b assets\gooberarsenal\models\item\obsidi
 f9bdf1d2e58c5398a84810ed2abf2394505b65bc assets\gooberarsenal\models\item\kevin_shard.json
 5aee76070c5667e360dd0681c76ad78da4c5f654 assets\gooberarsenal\models\item\cagite_block.json
 8a565a996c5d8fb4031dc5d0e5fa7439bc5327e1 assets\gooberarsenal\models\block\kevin_ore.json
-21f73d82b7477b84a24dc0d1c9dca5d1fae243e6 assets\gooberarsenal\models\item\life_saver.json
 94a5fd1efbf8e865c108b4a7ea9ef882ab1589f5 assets\gooberarsenal\models\item\business_case.json
+21f73d82b7477b84a24dc0d1c9dca5d1fae243e6 assets\gooberarsenal\models\item\life_saver.json
 f4dbe57498039223e303a0024c4bad726cbada2e assets\gooberarsenal\models\item\rubber_chicken.json
 de64d761f00ddc51edab62ad30bc780af88997aa assets\gooberarsenal\models\item\switch_cartridge.json

@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import net.teamluxron.gooberarsenal.block.ModBlocks;
 import net.teamluxron.gooberarsenal.item.ModItemGroups;
 import net.teamluxron.gooberarsenal.item.ModItems;
+import net.teamluxron.gooberarsenal.util.ModLootTableModifiers;
 import net.teamluxron.gooberarsenal.world.ModOrePlacement;
 import net.teamluxron.gooberarsenal.world.ModPlacedFeatures;
 import net.teamluxron.gooberarsenal.world.gen.ModOreGeneration;
@@ -24,6 +25,7 @@ public class GooberArsenal implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModLootTableModifiers.modifyLootTables();
 
 	}
 }

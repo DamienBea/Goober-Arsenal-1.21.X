@@ -29,7 +29,7 @@ public class ModPlacedFeatures {
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-100), YOffset.fixed(14))));
         register(context, ANCIENT_CAGITE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.ANCIENT_CAGITE_KEY),
                 ModOrePlacement.modifiersWithCount(2,
-                        HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(12))));
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(20))));
 
 
     }

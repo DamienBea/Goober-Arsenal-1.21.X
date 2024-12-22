@@ -32,15 +32,17 @@ public class ModBlocks {
                     .requiresTool()
                     .sounds(BlockSoundGroup.AMETHYST_BLOCK)
             ));
-    public static final Block ANCIENT_CAGE = registerBlock("ancient_cage",
+    //These have the "registerFireBlock" thingy so their items are fireproof
+    public static final Block ANCIENT_CAGE = registerFireBlock("ancient_cage",
             new Block(AbstractBlock.Settings.create()
-                    .strength(4f)
+                    .strength(4f, 6000f)
                     .requiresTool()
                     .sounds(BlockSoundGroup.ANCIENT_DEBRIS)
+
             ));
-    public static final Block CAGITE_BLOCK = registerBlock("cagite_block",
+    public static final Block CAGITE_BLOCK = registerFireBlock("cagite_block",
             new Block(AbstractBlock.Settings.create()
-                    .strength(4f)
+                    .strength(4f, 6000f)
                     .requiresTool()
                     .sounds(BlockSoundGroup.NETHERITE)
             ));
@@ -53,6 +55,15 @@ public class ModBlocks {
     private static void registerBlockItem(String name, Block block) {
         Registry.register(Registries.ITEM, Identifier.of(GooberArsenal.MOD_ID, name),
             new BlockItem(block, new Item.Settings()));
+    }
+    //This is for fireproof Block Items
+    private static Block registerFireBlock(String name, Block block) {
+        registerFireproofBlockItem(name, block);
+        return Registry.register(Registries.BLOCK, Identifier.of(GooberArsenal.MOD_ID, name), block);
+    }
+    private static void registerFireproofBlockItem(String name, Block block) {
+        Registry.register(Registries.ITEM, Identifier.of(GooberArsenal.MOD_ID, name),
+                new BlockItem(block, new Item.Settings().fireproof()));
     }
 
 

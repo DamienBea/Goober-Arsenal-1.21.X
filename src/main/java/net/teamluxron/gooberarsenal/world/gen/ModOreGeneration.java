@@ -14,11 +14,5 @@ public class ModOreGeneration {
         BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(), GenerationStep.Feature.UNDERGROUND_ORES,
                 ModPlacedFeatures.ANCIENT_CAGITE_PLACED_KEY);
 
-//         Example for individual Biomes
-//         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.FOREST, BiomeKeys.PLAINS),
-//         GenerationStep.Feature.UNDERGROUND_ORES,
-//                 ModPlacedFeatures.PINK_GARNET_ORE_PLACED_KEY);
-
-
     }
 }

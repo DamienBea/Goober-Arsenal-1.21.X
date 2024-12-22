@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.minecraft.registry.RegistryBuilder;
 import net.minecraft.registry.RegistryKeys;
 import net.teamluxron.gooberarsenal.datagen.*;
+import net.teamluxron.gooberarsenal.util.ModLootTableModifiers;
 import net.teamluxron.gooberarsenal.world.ModConfiguredFeatures;
 import net.teamluxron.gooberarsenal.world.ModPlacedFeatures;
 import net.teamluxron.gooberarsenal.datagen.ModWordGenerator;
