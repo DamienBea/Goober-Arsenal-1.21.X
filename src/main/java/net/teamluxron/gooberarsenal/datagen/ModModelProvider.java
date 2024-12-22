@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.item.ArmorItem;
 import net.teamluxron.gooberarsenal.block.ModBlocks;
 import net.teamluxron.gooberarsenal.item.ModItems;
 
@@ -38,5 +39,9 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RUBBER_CHICKEN, Models.GENERATED);
         itemModelGenerator.register(ModItems.BUSINESS_CASE, Models.GENERATED);
         itemModelGenerator.register(ModItems.CONTRABAND_CASE, Models.GENERATED);
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.CAGITE_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.CAGITE_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.CAGITE_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.CAGITE_BOOTS));
     }
 }

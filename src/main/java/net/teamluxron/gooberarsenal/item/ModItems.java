@@ -127,6 +127,19 @@ public class ModItems {
         }});
     public static final Item CONTRABAND_CASE = registerItem("contraband_case", new Item(new Item.Settings().food(ModFoodComponents.CONTRABAND_CASE).rarity(Rarity.EPIC)));
 
+    public static final Item CAGITE_HELMET = registerItem("cagite_helmet",
+            new ArmorItem(ModArmorMaterials.CAGITE_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))));
+    public static final Item CAGITE_CHESTPLATE = registerItem("cagite_chestplate",
+            new ArmorItem(ModArmorMaterials.CAGITE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(15))));
+    public static final Item CAGITE_LEGGINGS = registerItem("cagite_leggings",
+            new ArmorItem(ModArmorMaterials.CAGITE_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(15))));
+    public static final Item CAGITE_BOOTS = registerItem("cagite_boots",
+            new ArmorItem(ModArmorMaterials.CAGITE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))));
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(GooberArsenal.MOD_ID, name), item);
     }

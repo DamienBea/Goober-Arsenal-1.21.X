@@ -33,6 +33,10 @@ public class ModItemGroups {
                         entries.add(ModItems.OBSIDIAN_SWORD);
                         entries.add(ModItems.SLAPSTICK_SWORD);
                         entries.add(ModItems.STAHP_SIGN);
+                        entries.add(ModItems.CAGITE_HELMET);
+                        entries.add(ModItems.CAGITE_CHESTPLATE);
+                        entries.add(ModItems.CAGITE_LEGGINGS);
+                        entries.add(ModItems.CAGITE_BOOTS);
 
                         //entries.add(ModItems.BANANADE);
                     })
