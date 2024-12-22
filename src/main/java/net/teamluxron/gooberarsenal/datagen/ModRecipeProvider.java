@@ -216,21 +216,21 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 //                .input(ModBlocks.MAGIC_BLOCK)
 //                .criterion(hasItem(ModBlocks.MAGIC_BLOCK), conditionsFromItem(ModBlocks.MAGIC_BLOCK))
 //                .offerTo(exporter, Identifier.of(TutorialMod.MOD_ID, "raw_pink_garnet_from_magic_block"));
-
-        SmithingTrimRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.GOOBER_UPGRADE_TEMPLATE),
-                        Ingredient.ofItems(ModItems.OBSIDIAN_HILT, ModItems.OBSIDIAN_SWORD),
-                Ingredient.ofItems(Items.LAVA_BUCKET), RecipeCategory.MISC)
-                .criterion(hasItem(ModItems.GOOBER_UPGRADE_TEMPLATE), conditionsFromItem(ModItems.GOOBER_UPGRADE_TEMPLATE));
-
-        SmithingTrimRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.GOOBER_UPGRADE_TEMPLATE),
-                        Ingredient.ofItems(ModItems.NETHERITE_BAT, ModItems.BEE_BUNNY_BASHER),
-                        Ingredient.ofItems(Blocks.BEE_NEST), RecipeCategory.MISC)
-                .criterion(hasItem(ModItems.GOOBER_UPGRADE_TEMPLATE), conditionsFromItem(ModItems.GOOBER_UPGRADE_TEMPLATE));
-
-        SmithingTrimRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.GOOBER_UPGRADE_TEMPLATE),
-                        Ingredient.ofItems(ModItems.NETHERITE_BAT, ModItems.BEE_BUNNY_BASHER),
-                        Ingredient.ofItems(Blocks.BEEHIVE), RecipeCategory.MISC)
-                .criterion(hasItem(ModItems.GOOBER_UPGRADE_TEMPLATE), conditionsFromItem(ModItems.GOOBER_UPGRADE_TEMPLATE));
+//
+//        SmithingTrimRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.GOOBER_UPGRADE_TEMPLATE),
+//                        Ingredient.ofItems(ModItems.OBSIDIAN_HILT, ModItems.OBSIDIAN_SWORD),
+//                Ingredient.ofItems(Items.LAVA_BUCKET), RecipeCategory.MISC)
+//                .criterion(hasItem(ModItems.GOOBER_UPGRADE_TEMPLATE), conditionsFromItem(ModItems.GOOBER_UPGRADE_TEMPLATE));
+//
+//        SmithingTrimRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.GOOBER_UPGRADE_TEMPLATE),
+//                        Ingredient.ofItems(ModItems.NETHERITE_BAT, ModItems.BEE_BUNNY_BASHER),
+//                        Ingredient.ofItems(Blocks.BEE_NEST), RecipeCategory.MISC)
+//                .criterion(hasItem(ModItems.GOOBER_UPGRADE_TEMPLATE), conditionsFromItem(ModItems.GOOBER_UPGRADE_TEMPLATE));
+//
+//        SmithingTrimRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.GOOBER_UPGRADE_TEMPLATE),
+//                        Ingredient.ofItems(ModItems.NETHERITE_BAT, ModItems.BEE_BUNNY_BASHER),
+//                        Ingredient.ofItems(Blocks.BEEHIVE), RecipeCategory.MISC)
+//                .criterion(hasItem(ModItems.GOOBER_UPGRADE_TEMPLATE), conditionsFromItem(ModItems.GOOBER_UPGRADE_TEMPLATE));
 
         SmithingTrimRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.GOOBER_UPGRADE_TEMPLATE),
                         Ingredient.ofItems(ModItems.NETHERITE_BAT, ModItems.BEE_BUNNY_BASHER),
