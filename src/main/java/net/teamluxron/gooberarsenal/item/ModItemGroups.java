@@ -77,6 +77,7 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.gooberarsenal.gooberarsenal_consumables"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.SWITCH_CARTRIDGE);
+                        entries.add(ModItems.CONTRABAND_CASE);
                     })
                     .build());
 

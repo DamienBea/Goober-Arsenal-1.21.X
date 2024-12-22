@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:lava_bucket"
+  },
+  "base": {
+    "item": "gooberarsenal:obsidian_hilt"
+  },
+  "result": {
+    "count": 1,
+    "id": "gooberarsenal:obsidian_sword"
+  },
+  "template": {
+    "item": "gooberarsenal:goober_upgrade_template"
+  }
+}

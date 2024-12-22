@@ -12,8 +12,12 @@ public class ModFoodComponents {
             .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 200), 0.70f)
             .statusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 200), 0.70f)
 
-            .build()
-            ;
+            .build();
+    public static final FoodComponent CONTRABAND_CASE = new FoodComponent.Builder().nutrition(6).saturationModifier(2f).alwaysEdible()
+            .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 200, 1), 1)
+            .statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 200, 1), 1)
+            .statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 400, 1), 1)
+            .build();
 
 //    public static final FoodComponent GRILLED_CHEESE
 

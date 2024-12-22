@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_netherite_bat": {
+      "conditions": {
+        "items": [
+          {
+            "items": "gooberarsenal:netherite_bat"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:bbb_from_hive"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_netherite_bat"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:bbb_from_hive"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "gooberarsenal:business_case"
+    },
+    "K": {
+      "item": "gooberarsenal:kevin_block"
+    }
+  },
+  "pattern": [
+    "KKK",
+    "KCK",
+    "KKK"
+  ],
+  "result": {
+    "count": 1,
+    "id": "gooberarsenal:contraband_case"
+  }
+}

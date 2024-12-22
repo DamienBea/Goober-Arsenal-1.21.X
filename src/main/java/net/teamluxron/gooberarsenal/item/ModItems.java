@@ -8,6 +8,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 import net.teamluxron.gooberarsenal.GooberArsenal;
 
 import java.util.List;
@@ -91,16 +92,13 @@ public class ModItems {
     public static final Item LIFE_SAVER = registerItem("life_saver", new Item(new Item.Settings()));
     public static final Item RUBBER_CHICKEN = registerItem("rubber_chicken", new Item(new Item.Settings()));
     public static final Item BUSINESS_CASE = registerItem("business_case", new Item(new Item.Settings()));
-    public static final Item SWITCH_CARTRIDGE = registerItem("switch_cartridge", new Item(new Item.Settings().food(ModFoodComponents.SWITCH_CARTRIDGE)){
+    public static final Item SWITCH_CARTRIDGE = registerItem("switch_cartridge", new Item(new Item.Settings().food(ModFoodComponents.SWITCH_CARTRIDGE).fireproof()){
         @Override
         public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
             tooltip.add(Text.translatable("tooltip.gooberarsenal.switch_cartridge"));
             super.appendTooltip(stack, context, tooltip, type);
-        }
-
-    }
-
-    );
+        }});
+    public static final Item CONTRABAND_CASE = registerItem("contraband_case", new Item(new Item.Settings().food(ModFoodComponents.CONTRABAND_CASE).rarity(Rarity.EPIC)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(GooberArsenal.MOD_ID, name), item);

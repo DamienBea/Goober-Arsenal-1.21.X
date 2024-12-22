@@ -37,5 +37,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.LIFE_SAVER, Models.GENERATED);
         itemModelGenerator.register(ModItems.RUBBER_CHICKEN, Models.GENERATED);
         itemModelGenerator.register(ModItems.BUSINESS_CASE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CONTRABAND_CASE, Models.GENERATED);
     }
 }

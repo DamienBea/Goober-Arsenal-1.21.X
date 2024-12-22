@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "gooberarsenal:cagite_ingot"
+  },
+  "base": {
+    "item": "gooberarsenal:steel_pipe"
+  },
+  "result": {
+    "count": 1,
+    "id": "gooberarsenal:stahp_sign"
+  },
+  "template": {
+    "item": "gooberarsenal:goober_upgrade_template"
+  }
+}
