@@ -208,6 +208,27 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.KEVIN_BLOCK), conditionsFromItem(ModBlocks.KEVIN_BLOCK))
                 .offerTo(exporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SANDVICH)
+                .pattern(" B ")
+                .pattern("CPS")
+                .pattern(" B ")
+                .input('B', Items.BREAD)
+                .input('C', Items.COOKED_PORKCHOP)
+                .input('P', Items.BAKED_POTATO)
+                .input('S', Items.COOKED_BEEF)
+                .criterion(hasItem(Items.BREAD), conditionsFromItem(Items.BREAD))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CHOCOLATE_CHIP_PANCAKES)
+                .pattern("SCS")
+                .pattern("WWW")
+                .pattern("   ")
+                .input('W', Items.WHEAT)
+                .input('C', Items.COCOA_BEANS)
+                .input('S', Items.SUGAR)
+                .criterion(hasItem(Items.WHEAT), conditionsFromItem(Items.WHEAT))
+                .offerTo(exporter);
+
         //Smithing Recipes
         SmithingTransformRecipeJsonBuilder.create(
                 Ingredient.ofItems(ModItems.GOOBER_UPGRADE_TEMPLATE),
@@ -281,6 +302,41 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.CAGITE_INGOT), conditionsFromItem(ModItems.CAGITE_INGOT))
                 .offerTo(exporter, "stahp_sign_smithing");
 
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.GOOBER_UPGRADE_TEMPLATE),
+                        Ingredient.ofItems(Items.DIAMOND_HELMET),
+                        Ingredient.ofItems(ModItems.CAGITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.CAGITE_HELMET)
+                .criterion(hasItem(Items.DIAMOND_HELMET), conditionsFromItem(Items.DIAMOND_HELMET))
+                .offerTo(exporter, "cagite_helmet_smithing");
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.GOOBER_UPGRADE_TEMPLATE),
+                        Ingredient.ofItems(Items.DIAMOND_CHESTPLATE),
+                        Ingredient.ofItems(ModItems.CAGITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.CAGITE_CHESTPLATE)
+                .criterion(hasItem(Items.DIAMOND_CHESTPLATE), conditionsFromItem(Items.DIAMOND_CHESTPLATE))
+                .offerTo(exporter, "cagite_chestplate_smithing");
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.GOOBER_UPGRADE_TEMPLATE),
+                        Ingredient.ofItems(Items.DIAMOND_LEGGINGS),
+                        Ingredient.ofItems(ModItems.CAGITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.CAGITE_LEGGINGS)
+                .criterion(hasItem(Items.DIAMOND_LEGGINGS), conditionsFromItem(Items.DIAMOND_LEGGINGS))
+                .offerTo(exporter, "cagite_leggings_smithing");
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.GOOBER_UPGRADE_TEMPLATE),
+                        Ingredient.ofItems(Items.DIAMOND_BOOTS),
+                        Ingredient.ofItems(ModItems.CAGITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.CAGITE_BOOTS)
+                .criterion(hasItem(Items.DIAMOND_BOOTS), conditionsFromItem(Items.DIAMOND_BOOTS))
+                .offerTo(exporter, "cagite_boots_smithing");
 
 
 

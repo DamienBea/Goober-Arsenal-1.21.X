@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:bread"
+    },
+    "C": {
+      "item": "minecraft:cooked_porkchop"
+    },
+    "P": {
+      "item": "minecraft:baked_potato"
+    },
+    "S": {
+      "item": "minecraft:cooked_beef"
+    }
+  },
+  "pattern": [
+    " B ",
+    "CPS",
+    " B "
+  ],
+  "result": {
+    "count": 1,
+    "id": "gooberarsenal:sandvich"
+  }
+}

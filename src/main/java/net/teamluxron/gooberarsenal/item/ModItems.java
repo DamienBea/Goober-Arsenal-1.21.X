@@ -224,13 +224,6 @@ public class ModItems {
     public static final Item LIFE_SAVER = registerItem("life_saver", new Item(new Item.Settings()));
     public static final Item RUBBER_CHICKEN = registerItem("rubber_chicken", new Item(new Item.Settings()));
     public static final Item BUSINESS_CASE = registerItem("business_case", new Item(new Item.Settings()));
-    public static final Item SWITCH_CARTRIDGE = registerItem("switch_cartridge", new Item(new Item.Settings().food(ModFoodComponents.SWITCH_CARTRIDGE).fireproof()){
-        @Override
-        public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
-            tooltip.add(Text.translatable("tooltip.gooberarsenal.switch_cartridge"));
-            super.appendTooltip(stack, context, tooltip, type);
-        }});
-    public static final Item CONTRABAND_CASE = registerItem("contraband_case", new Item(new Item.Settings().food(ModFoodComponents.CONTRABAND_CASE).rarity(Rarity.EPIC)));
 
     //Armor
     public static final Item CAGITE_HELMET = registerItem("cagite_helmet",
@@ -245,6 +238,17 @@ public class ModItems {
     public static final Item CAGITE_BOOTS = registerItem("cagite_boots",
             new ArmorItem(ModArmorMaterials.CAGITE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
                     .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))));
+
+    //Consumables
+    public static final Item SWITCH_CARTRIDGE = registerItem("switch_cartridge", new Item(new Item.Settings().food(ModFoodComponents.SWITCH_CARTRIDGE).fireproof()){
+        @Override
+        public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+            tooltip.add(Text.translatable("tooltip.gooberarsenal.switch_cartridge"));
+            super.appendTooltip(stack, context, tooltip, type);
+        }});
+    public static final Item CONTRABAND_CASE = registerItem("contraband_case", new Item(new Item.Settings().food(ModFoodComponents.CONTRABAND_CASE).rarity(Rarity.EPIC)));
+    public static final Item SANDVICH = registerItem("sandvich", new Item(new Item.Settings().food(ModFoodComponents.SANDVICH)));
+    public static final Item CHOCOLATE_CHIP_PANCAKES = registerItem("chocolate_chip_pancakes", new Item(new Item.Settings().food(ModFoodComponents.CHOCOLATE_CHIP_PANCAKES)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(GooberArsenal.MOD_ID, name), item);

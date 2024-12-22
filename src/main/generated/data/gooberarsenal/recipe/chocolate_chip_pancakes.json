@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:cocoa_beans"
+    },
+    "S": {
+      "item": "minecraft:sugar"
+    },
+    "W": {
+      "item": "minecraft:wheat"
+    }
+  },
+  "pattern": [
+    "SCS",
+    "WWW",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "gooberarsenal:chocolate_chip_pancakes"
+  }
+}

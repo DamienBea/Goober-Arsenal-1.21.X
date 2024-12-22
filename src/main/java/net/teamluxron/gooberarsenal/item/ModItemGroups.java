@@ -81,6 +81,8 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.gooberarsenal.gooberarsenal_consumables"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.SWITCH_CARTRIDGE);
+                        entries.add(ModItems.CHOCOLATE_CHIP_PANCAKES);
+                        entries.add(ModItems.SANDVICH);
                         entries.add(ModItems.CONTRABAND_CASE);
                     })
                     .build());
