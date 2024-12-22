@@ -28,6 +28,8 @@ public class ModFoodComponents {
     public static final FoodComponent CHOCOLATE_CHIP_PANCAKES = new FoodComponent.Builder().nutrition(6).saturationModifier(1f)
             .build();
 
+
+
 //    public static final FoodComponent GRILLED_CHEESE
 
 }
