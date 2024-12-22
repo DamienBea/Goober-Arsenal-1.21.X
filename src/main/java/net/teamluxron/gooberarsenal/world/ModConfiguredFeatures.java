@@ -17,22 +17,22 @@ import net.teamluxron.gooberarsenal.block.ModBlocks;
 import java.util.List;
 
 public class ModConfiguredFeatures {
-//    public static final RegistryKey<ConfiguredFeature<?, ?>> KEVIN_ORE_KEY = registerKey("kevin_ore_key");
-//    public static final RegistryKey<ConfiguredFeature<?, ?>> ANCIENT_CAGITE_KEY = registerKey("ancient_cagite_key");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> KEVIN_ORE_KEY = registerKey("kevin_ore_key");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> ANCIENT_CAGITE_KEY = registerKey("ancient_cagite_key");
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
         RuleTest deepslateReplaceables = new TagMatchRuleTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
         RuleTest netherReplaceables = new TagMatchRuleTest(BlockTags.BASE_STONE_NETHER);
 
-//        List<OreFeatureConfig.Target> KevinOres =
-//                List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.KEVIN_ORE.getDefaultState()),
-//                        OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.DEEPSLATE_KEVIN_ORE.getDefaultState()));
-//        List<OreFeatureConfig.Target> AncientCagite =
-//                List.of(OreFeatureConfig.createTarget(netherReplaceables, ModBlocks.ANCIENT_CAGE.getDefaultState()));
+        List<OreFeatureConfig.Target> KevinOres =
+                List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.KEVIN_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.DEEPSLATE_KEVIN_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> AncientCagite =
+                List.of(OreFeatureConfig.createTarget(netherReplaceables, ModBlocks.ANCIENT_CAGE.getDefaultState()));
 
-//        register(context, KEVIN_ORE_KEY, Feature.ORE, new OreFeatureConfig(KevinOres, 8));
-//        register(context, ANCIENT_CAGITE_KEY, Feature.ORE, new OreFeatureConfig(AncientCagite, 4));
+        register(context, KEVIN_ORE_KEY, Feature.ORE, new OreFeatureConfig(KevinOres, 8));
+        register(context, ANCIENT_CAGITE_KEY, Feature.ORE, new OreFeatureConfig(AncientCagite, 4));
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {
