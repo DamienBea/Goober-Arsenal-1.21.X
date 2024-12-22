@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:ore",
+  "config": {
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:base_stone_nether"
+        },
+        "state": {
+          "Name": "gooberarsenal:ancient_cage"
+        }
+      }
+    ],
+    "size": 4
+  }
+}
