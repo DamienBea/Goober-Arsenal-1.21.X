@@ -232,6 +232,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         Ingredient.ofItems(Blocks.BEEHIVE), RecipeCategory.MISC)
                 .criterion(hasItem(ModItems.GOOBER_UPGRADE_TEMPLATE), conditionsFromItem(ModItems.GOOBER_UPGRADE_TEMPLATE));
 
+        SmithingTrimRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.GOOBER_UPGRADE_TEMPLATE),
+                        Ingredient.ofItems(ModItems.NETHERITE_BAT, ModItems.BEE_BUNNY_BASHER),
+                        Ingredient.ofItems(Blocks.BEEHIVE),
+                        RecipeCategory.MISC
+                )
+                .criterion(hasItem(ModItems.GOOBER_UPGRADE_TEMPLATE), conditionsFromItem(ModItems.GOOBER_UPGRADE_TEMPLATE))
+                .offerTo(exporter, Identifier.of(GooberArsenal.MOD_ID, "bbb_from_feet"));
+
 //        SmithingTrimRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.GOOBER_UPGRADE_TEMPLATE),
 //                        Ingredient.ofItems(ModItems.NETHERITE_BAT),
 //                        Ingredient.ofItems(Items.RABBIT_FOOT), RecipeCategory.MISC), ModItems.BEE_BUNNY_BASHER;

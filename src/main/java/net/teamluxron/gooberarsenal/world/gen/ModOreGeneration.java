@@ -7,11 +7,11 @@ import net.teamluxron.gooberarsenal.world.ModPlacedFeatures;
 
 public class ModOreGeneration {
     public static void generateOres() {
-        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES,
-                ModPlacedFeatures.KEVIN_ORE_PLACED_KEY);
+//        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES,
+//                ModPlacedFeatures.KEVIN_ORE_PLACED_KEY);
 
-        BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(), GenerationStep.Feature.UNDERGROUND_ORES,
-                ModPlacedFeatures.ANCIENT_CAGITE_PLACED_KEY);
+//        BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(), GenerationStep.Feature.UNDERGROUND_ORES,
+//                ModPlacedFeatures.ANCIENT_CAGITE_PLACED_KEY);
 
         // Example for individual Bioms
         // BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.FOREST, BiomeKeys.PLAINS),
