@@ -199,6 +199,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.IRON_PLATE), conditionsFromItem(ModItems.IRON_PLATE))
                 .offerTo(exporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CONTRABAND_CASE)
+                .pattern("KKK")
+                .pattern("KCK")
+                .pattern("KKK")
+                .input('K', ModBlocks.KEVIN_BLOCK)
+                .input('C', ModItems.BUSINESS_CASE)
+                .criterion(hasItem(ModBlocks.KEVIN_BLOCK), conditionsFromItem(ModBlocks.KEVIN_BLOCK))
+                .offerTo(exporter);
+
         //Smithing Recipes
         SmithingTransformRecipeJsonBuilder.create(
                 Ingredient.ofItems(ModItems.GOOBER_UPGRADE_TEMPLATE),
