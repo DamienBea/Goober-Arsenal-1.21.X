@@ -1,4 +1,4 @@
-// 1.21.1	2024-12-22T11:42:20.2197823	Goober Arsenal/Model Definitions
+// 1.21.1	2024-12-22T12:30:18.5071271	Goober Arsenal/Model Definitions
 b1ee2882c9d3a2353cf2d3b50ee783e5cc35b5b1 assets\gooberarsenal\models\block\kevin_block.json
 39ec5897f6b45740318d670e39d15d4c7d7591d4 assets\gooberarsenal\models\item\iron_plate.json
 e24d1461b31109626a195f909440857cc2824630 assets\gooberarsenal\models\item\obsidian_handguard.json
@@ -11,8 +11,8 @@ db14b599ad3da384f418c3151405e120dcb3c147 assets\gooberarsenal\blockstates\kevin_
 d59e53c369daed6f71d82ab74273057a879461f5 assets\gooberarsenal\models\item\deepslate_kevin_ore.json
 4d8221e4b115ffa4856f4367c82a0d8b52f69b0e assets\gooberarsenal\models\block\cagite_block.json
 fef7c15528d7c9d05deefabad699783ee815a1d3 assets\gooberarsenal\models\block\ancient_cage.json
-41723a6e6c42099326405fc7f8f700865afaa75f assets\gooberarsenal\blockstates\cagite_block.json
 844cb951356d010ab6fa62fbce527ce108843cad assets\gooberarsenal\blockstates\deepslate_kevin_ore.json
+41723a6e6c42099326405fc7f8f700865afaa75f assets\gooberarsenal\blockstates\cagite_block.json
 d01dfe7af06285ddaad79a0230a4eb68bcf3748f assets\gooberarsenal\models\item\kevin_block.json
 f25788be69abe8557cad7de285101a761036f9bc assets\gooberarsenal\blockstates\kevin_block.json
 ced357d65112b7d426efd7629ea53a12ec5f929b assets\gooberarsenal\models\item\obsidian_hilt.json

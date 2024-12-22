@@ -4,5 +4,6 @@ public class ModWorldGeneration {
     public static void generateModWordGen() {
         ModOreGeneration.generateOres();
 
+
     }
 }

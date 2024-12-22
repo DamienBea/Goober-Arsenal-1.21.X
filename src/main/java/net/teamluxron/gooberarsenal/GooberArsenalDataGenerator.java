@@ -7,6 +7,7 @@ import net.minecraft.registry.RegistryKeys;
 import net.teamluxron.gooberarsenal.datagen.*;
 import net.teamluxron.gooberarsenal.world.ModConfiguredFeatures;
 import net.teamluxron.gooberarsenal.world.ModPlacedFeatures;
+import net.teamluxron.gooberarsenal.datagen.ModWordGenerator;
 
 public class GooberArsenalDataGenerator implements DataGeneratorEntrypoint {
 	@Override
@@ -18,6 +19,7 @@ public class GooberArsenalDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModLootTableProvider::new);
 		pack.addProvider(ModModelProvider::new);
 		pack.addProvider(ModRecipeProvider::new);
+		pack.addProvider(ModWordGenerator::new);
 	}
 
 	@Override
