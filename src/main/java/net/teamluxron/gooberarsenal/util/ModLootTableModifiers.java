@@ -29,7 +29,7 @@ public class ModLootTableModifiers {
             if (SHIPWRECK_TREASURE_ID.equals(key)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.05f)) // 5% chance
+                        .conditionally(RandomChanceLootCondition.builder(0.15f)) // 5% chance
                         .with(ItemEntry.builder(ModItems.LIFE_SAVER))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)));
 
@@ -38,7 +38,7 @@ public class ModLootTableModifiers {
             if (BURIED_TREASURE_ID.equals(key)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.05f)) // 5% chance
+                        .conditionally(RandomChanceLootCondition.builder(0.30f)) // 5% chance
                         .with(ItemEntry.builder(ModItems.LIFE_SAVER))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)));
 
@@ -47,7 +47,7 @@ public class ModLootTableModifiers {
             if (BASTION_HOGLIN_CHEST_ID.equals(key)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.05f)) // 5% chance
+                        .conditionally(RandomChanceLootCondition.builder(0.30f)) // 5% chance
                         .with(ItemEntry.builder(ModItems.RUBBER_CHICKEN))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)));
 

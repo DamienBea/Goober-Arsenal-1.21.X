@@ -4,7 +4,7 @@
     "item": "gooberarsenal:rubber_chicken"
   },
   "base": {
-    "item": "minecraft:netherite_sword"
+    "item": "gooberarsenal:netherite_bat"
   },
   "result": {
     "count": 1,

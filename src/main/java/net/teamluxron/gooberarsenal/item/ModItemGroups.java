@@ -11,11 +11,11 @@ import net.teamluxron.gooberarsenal.GooberArsenal;
 import net.teamluxron.gooberarsenal.block.ModBlocks;
 
 public class ModItemGroups {
-    public static final ItemGroup GOOBERARSENAL_WEAPONS = Registry.register(Registries.ITEM_GROUP,
-            Identifier.of(GooberArsenal.MOD_ID, "gooberarsenal_weapons"),
+    public static final ItemGroup GOOBERARSENAL_COMBAT = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(GooberArsenal.MOD_ID, "gooberarsenal_combat"),
             FabricItemGroup.builder()
                     .icon(() -> new ItemStack(ModItems.FRYING_PAN))
-                    .displayName(Text.translatable("itemgroup.gooberarsenal.gooberarsenal_weapons"))
+                    .displayName(Text.translatable("itemgroup.gooberarsenal.gooberarsenal_combat"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.WOODEN_BAT);
                         entries.add(ModItems.IRON_BAT);

@@ -27,6 +27,10 @@
   "item.gooberarsenal.business_case": "Business Case",
   "item.gooberarsenal.slapstick_sword": "Slapstick Sword",
   "item.gooberarsenal.contraband_case": "Contraband Case",
+  "item.gooberarsenal.cagite_helmet": "Cagite Helmet",
+  "item.gooberarsenal.cagite_chestplate": "Cagite Chestplate",
+  "item.gooberarsenal.cagite_leggings": "Cagite Leggings",
+  "item.gooberarsenal.cagite_boots": "Cagite Boots",
 
   "block.gooberarsenal.ancient_cage": "Ancient Cagite",
   "block.gooberarsenal.cagite_block": "Block of Cagite",
@@ -35,7 +39,7 @@
   "block.gooberarsenal.kevin_block": "Block of Kevin",
 
 
-  "itemgroup.gooberarsenal.gooberarsenal_weapons": "Goober Arsenal Weapons",
+  "itemgroup.gooberarsenal.gooberarsenal_combat": "Goober Arsenal Combat",
   "itemgroup.gooberarsenal.gooberarsenal_items": "Goober Arsenal Items",
   "itemgroup.gooberarsenal.gooberarsenal_blocks": "Goober Arsenal Blocks",
   "itemgroup.gooberarsenal.gooberarsenal_consumables": "Goober Arsenal Consumables",

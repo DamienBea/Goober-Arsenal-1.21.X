@@ -1,25 +1,26 @@
 package net.teamluxron.gooberarsenal.item;
 
 import net.minecraft.block.Block;
+import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.registry.tag.TagKey;
 
-public class KevinMaterial implements ToolMaterial {
+public class ChairMaterial implements ToolMaterial {
 
     @Override
     public int getDurability() {
-        return 1650;
+        return 10;
     }
 
     @Override
     public float getMiningSpeedMultiplier() {
-        return 9.0f;
+        return 2.0f;
     }
 
     @Override
     public float getAttackDamage() {
-        return 6.0f;
+        return 8.0f;
     }
 
     @Override
@@ -29,15 +30,15 @@ public class KevinMaterial implements ToolMaterial {
 
     @Override
     public int getEnchantability() {
-        return 15;
+        return 5;
     }
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(ModItems.KEVIN_SHARD);
+        return Ingredient.ofItems(ModItems.IRON_PLATE);
     }
 
-    public static final KevinMaterial INSTANCE = new KevinMaterial();
+    public static final ChairMaterial INSTANCE = new ChairMaterial();
 
 }
 

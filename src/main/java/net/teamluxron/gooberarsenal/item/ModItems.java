@@ -28,15 +28,15 @@ public class ModItems {
 
     public static final Item FRYING_PAN = registerItem("frying_pan",
             new SwordItem(ToolMaterials.IRON, new Item.Settings()
-                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.IRON, 3, -2.4f))));
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.IRON, 9, -3.5f))));
 
     public static final Item STEEL_PIPE = registerItem("steel_pipe",
             new SwordItem(ToolMaterials.IRON, new Item.Settings()
-                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.IRON, 3, -2.4f))));
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.IRON, 5, -2.6f))));
 
     public static final Item CHAIR = registerItem("chair",
-            new SwordItem(ToolMaterials.IRON, new Item.Settings()
-                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.IRON, 3, -2.4f))));
+            new SwordItem(ChairMaterial.INSTANCE, new Item.Settings()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ChairMaterial.INSTANCE, 1, -3f))));
 
     public static final Item BEE_BUNNY_BASHER = registerItem("bee_bunny_basher",
             new SwordItem(CagiteMaterial.INSTANCE, new Item.Settings().fireproof()
@@ -67,7 +67,7 @@ public class ModItems {
 
     public static final Item STAHP_SIGN = registerItem("stahp_sign",
             new SwordItem(CagiteMaterial.INSTANCE, new Item.Settings().fireproof()
-                    .attributeModifiers(SwordItem.createAttributeModifiers(CagiteMaterial.INSTANCE, 1, -2.4f))){
+                    .attributeModifiers(SwordItem.createAttributeModifiers(CagiteMaterial.INSTANCE, 1, -2.5f))){
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         if (target instanceof LivingEntity) {
@@ -168,11 +168,11 @@ public class ModItems {
 
     public static final Item SPOON = registerItem("spoon",
             new ShovelItem(ToolMaterials.IRON, new Item.Settings().fireproof()
-                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.IRON, 4, -2.4f))));
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.IRON, 5, -3f))));
 
     public static final Item FESTIVE_AXE = registerItem("festive_axe",
             new AxeItem(ToolMaterials.DIAMOND, new Item.Settings()
-                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.DIAMOND, 4, -2.4f))){
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.DIAMOND, 5, -3f))){
                 @Override
                 public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
                     tooltip.add(Text.translatable("tooltip.gooberarsenal.festive_axe"));
@@ -182,15 +182,34 @@ public class ModItems {
 
     public static final Item LIFE_SABER = registerItem("life_saber",
             new SwordItem(KevinMaterial.INSTANCE, new Item.Settings()
-                    .attributeModifiers(SwordItem.createAttributeModifiers(KevinMaterial.INSTANCE, 4, -2.4f))));
+                    .attributeModifiers(SwordItem.createAttributeModifiers(KevinMaterial.INSTANCE, -1, 2))) {
+                public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
+                if (entity instanceof PlayerEntity player && selected) {
+                    player.addStatusEffect(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 20, 0, true, false));
+                    player.addStatusEffect(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 20, 1, true, false));
+                }
+                super.inventoryTick(stack, world, entity, slot, selected);
+            }
+
+            });
 
     public static final Item KENDO_STICK = registerItem("kendo_stick",
             new SwordItem(KendoStickMaterial.INSTANCE, new Item.Settings()
                     .attributeModifiers(SwordItem.createAttributeModifiers(KendoStickMaterial.INSTANCE, 0, -2.4f))));
 
     public static final Item SLAPSTICK_SWORD = registerItem("slapstick_sword",
-            new SwordItem(ToolMaterials.NETHERITE, new Item.Settings().fireproof()
-                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.NETHERITE, 4, -2.4f))));
+            new SwordItem(CagiteMaterial.INSTANCE, new Item.Settings().fireproof()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(CagiteMaterial.INSTANCE, 1, -2))){
+
+                @Override
+                public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
+                    if (target instanceof LivingEntity) {
+                        Vec3d direction = target.getPos().subtract(attacker.getPos()).normalize();
+                        target.addVelocity(direction.x * 0.5, 0.6, direction.z * 0.5);
+                    }
+                    return super.postHit(stack, target, attacker);
+                }
+            });
 
 
     //Crafting Ingredients
@@ -213,6 +232,7 @@ public class ModItems {
         }});
     public static final Item CONTRABAND_CASE = registerItem("contraband_case", new Item(new Item.Settings().food(ModFoodComponents.CONTRABAND_CASE).rarity(Rarity.EPIC)));
 
+    //Armor
     public static final Item CAGITE_HELMET = registerItem("cagite_helmet",
             new ArmorItem(ModArmorMaterials.CAGITE_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
                     .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))));

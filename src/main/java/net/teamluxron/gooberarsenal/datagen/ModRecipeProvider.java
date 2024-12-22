@@ -247,7 +247,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         SmithingTransformRecipeJsonBuilder.create(
                         Ingredient.ofItems(ModItems.GOOBER_UPGRADE_TEMPLATE),
-                        Ingredient.ofItems(Items.NETHERITE_SWORD),
+                        Ingredient.ofItems(ModItems.NETHERITE_BAT),
                         Ingredient.ofItems(ModItems.RUBBER_CHICKEN),
                         RecipeCategory.MISC,
                         ModItems.SLAPSTICK_SWORD)
