@@ -80,6 +80,10 @@ public abstract class ItemRendererMixin {
             return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager()
                     .getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(GooberArsenal.MOD_ID, "kendo_stick_3d")));
         }
+        if (stack.isOf(ModItems.SLAPSTICK_SWORD) && renderMode != ModelTransformationMode.GUI) {
+            return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager()
+                    .getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(GooberArsenal.MOD_ID, "slapstick_sword_3d")));
+        }
         return value;
     }
 
