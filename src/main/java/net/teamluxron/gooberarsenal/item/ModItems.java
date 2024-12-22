@@ -16,6 +16,7 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
+import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import net.teamluxron.gooberarsenal.GooberArsenal;
 
@@ -38,8 +39,8 @@ public class ModItems {
                     .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.IRON, 3, -2.4f))));
 
     public static final Item BEE_BUNNY_BASHER = registerItem("bee_bunny_basher",
-            new SwordItem(ToolMaterials.NETHERITE, new Item.Settings().fireproof()
-                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.NETHERITE, 5, -2))){
+            new SwordItem(CagiteMaterial.INSTANCE, new Item.Settings().fireproof()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(CagiteMaterial.INSTANCE, 1, -2))){
                 @Override
                 public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
                     tooltip.add(Text.translatable("tooltip.gooberarsenal.bee_bunny_basher"));
@@ -48,6 +49,8 @@ public class ModItems {
                 public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
                     if (target instanceof LivingEntity) {
                         target.addStatusEffect(new StatusEffectInstance(StatusEffects.POISON, 40));
+                        Vec3d direction = target.getPos().subtract(attacker.getPos()).normalize();
+                        target.addVelocity(direction.x * 0.5, 0.1, direction.z * 0.5);
                     }
                     return super.postHit(stack, target, attacker);
                 }
@@ -63,8 +66,8 @@ public class ModItems {
             });
 
     public static final Item STAHP_SIGN = registerItem("stahp_sign",
-            new SwordItem(ToolMaterials.NETHERITE, new Item.Settings().fireproof()
-                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.NETHERITE, 5, -2.4f))){
+            new SwordItem(CagiteMaterial.INSTANCE, new Item.Settings().fireproof()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(CagiteMaterial.INSTANCE, 1, -2.4f))){
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         if (target instanceof LivingEntity) {
@@ -77,27 +80,77 @@ public class ModItems {
 
     public static final Item WOODEN_BAT = registerItem("wooden_bat",
             new SwordItem(ToolMaterials.WOOD, new Item.Settings()
-                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.WOOD, 2, -2))));
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.WOOD, 2, -2))){
+
+                @Override
+                public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
+                    if (target instanceof LivingEntity) {
+                        Vec3d direction = target.getPos().subtract(attacker.getPos()).normalize();
+                        target.addVelocity(direction.x * 0.5, 0.1, direction.z * 0.5);
+                    }
+                    return super.postHit(stack, target, attacker);
+                }
+            });
 
     public static final Item IRON_BAT = registerItem("iron_bat",
             new SwordItem(ToolMaterials.IRON, new Item.Settings()
-                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.IRON, 2, -2))));
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.IRON, 2, -2))){
+
+        @Override
+        public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
+            if (target instanceof LivingEntity) {
+                Vec3d direction = target.getPos().subtract(attacker.getPos()).normalize();
+                target.addVelocity(direction.x * 0.5, 0.1, direction.z * 0.5);
+            }
+            return super.postHit(stack, target, attacker);
+        }
+    });
 
     public static final Item GOLDEN_BAT = registerItem("golden_bat",
             new SwordItem(ToolMaterials.GOLD, new Item.Settings()
-                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.GOLD, 2, -2))));
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.GOLD, 2, -2))){
+
+                @Override
+                public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
+                    if (target instanceof LivingEntity) {
+                        Vec3d direction = target.getPos().subtract(attacker.getPos()).normalize();
+                        target.addVelocity(direction.x * 0.5, 0.1, direction.z * 0.5);
+                    }
+                    return super.postHit(stack, target, attacker);
+                }
+            });
 
     public static final Item DIAMOND_BAT = registerItem("diamond_bat",
             new SwordItem(ToolMaterials.DIAMOND, new Item.Settings()
-                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.DIAMOND, 2, -2))));
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.DIAMOND, 2, -2))){
+
+                @Override
+                public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
+                    if (target instanceof LivingEntity) {
+                        Vec3d direction = target.getPos().subtract(attacker.getPos()).normalize();
+                        target.addVelocity(direction.x * 0.5, 0.1, direction.z * 0.5);
+                    }
+                    return super.postHit(stack, target, attacker);
+                }
+            });
 
     public static final Item NETHERITE_BAT = registerItem("netherite_bat",
             new SwordItem(ToolMaterials.NETHERITE, new Item.Settings().fireproof()
-                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.NETHERITE, 2, -2))));
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.NETHERITE, 2, -2))){
+
+                @Override
+                public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
+                    if (target instanceof LivingEntity) {
+                        Vec3d direction = target.getPos().subtract(attacker.getPos()).normalize();
+                        target.addVelocity(direction.x * 0.5, 0.1, direction.z * 0.5);
+                    }
+                    return super.postHit(stack, target, attacker);
+                }
+            });
 
     public static final Item OBSIDIAN_SWORD = registerItem("obsidian_sword",
-            new SwordItem(ToolMaterials.NETHERITE, new Item.Settings().fireproof()
-                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.NETHERITE, 7, -3))) {
+            new SwordItem(ObsidianSwordMaterial.INSTANCE, new Item.Settings().fireproof()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ObsidianSwordMaterial.INSTANCE, 3, -3))) {
     @Override
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
         if (entity instanceof PlayerEntity player && selected) {
@@ -118,8 +171,8 @@ public class ModItems {
                     .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.IRON, 4, -2.4f))));
 
     public static final Item FESTIVE_AXE = registerItem("festive_axe",
-            new AxeItem(ToolMaterials.NETHERITE, new Item.Settings()
-                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.NETHERITE, 4, -2.4f))){
+            new AxeItem(ToolMaterials.DIAMOND, new Item.Settings()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.DIAMOND, 4, -2.4f))){
                 @Override
                 public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
                     tooltip.add(Text.translatable("tooltip.gooberarsenal.festive_axe"));
@@ -128,8 +181,8 @@ public class ModItems {
             });
 
     public static final Item LIFE_SABER = registerItem("life_saber",
-            new SwordItem(ToolMaterials.DIAMOND, new Item.Settings()
-                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.DIAMOND, 4, -2.4f))));
+            new SwordItem(KevinMaterial.INSTANCE, new Item.Settings()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(KevinMaterial.INSTANCE, 4, -2.4f))));
 
     public static final Item KENDO_STICK = registerItem("kendo_stick",
             new SwordItem(ToolMaterials.WOOD, new Item.Settings()
