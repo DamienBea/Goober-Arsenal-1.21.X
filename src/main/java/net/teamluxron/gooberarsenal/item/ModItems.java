@@ -28,65 +28,95 @@ public class ModItems {
     public static final Item FRYING_PAN = registerItem("frying_pan",
             new SwordItem(ToolMaterials.IRON, new Item.Settings()
                     .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.IRON, 3, -2.4f))));
+
     public static final Item STEEL_PIPE = registerItem("steel_pipe",
             new SwordItem(ToolMaterials.IRON, new Item.Settings()
                     .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.IRON, 3, -2.4f))));
+
     public static final Item CHAIR = registerItem("chair",
             new SwordItem(ToolMaterials.IRON, new Item.Settings()
                     .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.IRON, 3, -2.4f))));
+
     public static final Item BEE_BUNNY_BASHER = registerItem("bee_bunny_basher",
             new SwordItem(ToolMaterials.NETHERITE, new Item.Settings().fireproof()
-                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.NETHERITE, 4, -2.4f))){
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.NETHERITE, 5, -2))){
                 @Override
                 public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
                     tooltip.add(Text.translatable("tooltip.gooberarsenal.bee_bunny_basher"));
                     super.appendTooltip(stack, context, tooltip, type);
                 }
+                public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
+                    if (target instanceof LivingEntity) {
+                        target.addStatusEffect(new StatusEffectInstance(StatusEffects.POISON, 40));
+                    }
+                    return super.postHit(stack, target, attacker);
+                }
+                public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
+                    if (entity instanceof PlayerEntity player && selected) {
+                        player.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 20, 1, true, false));
+                        player.addStatusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST, 20, 0, true, false));
+                        player.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOW_FALLING, 20, 0, true, false));
+                    }
+                    super.inventoryTick(stack, world, entity, slot, selected);
+                }
 
             });
+
     public static final Item STAHP_SIGN = registerItem("stahp_sign",
             new SwordItem(ToolMaterials.NETHERITE, new Item.Settings().fireproof()
-                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.NETHERITE, 4, -2.4f))){
-
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.NETHERITE, 5, -2.4f))){
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         if (target instanceof LivingEntity) {
-            target.addStatusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 200));
-            target.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 200));
+            target.addStatusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 60));
+            target.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 60));
         }
         return super.postHit(stack, target, attacker);
     }
 });
+
     public static final Item WOODEN_BAT = registerItem("wooden_bat",
             new SwordItem(ToolMaterials.WOOD, new Item.Settings()
-                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.WOOD, 4, -2.4f))));
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.WOOD, 2, -2))));
+
     public static final Item IRON_BAT = registerItem("iron_bat",
             new SwordItem(ToolMaterials.IRON, new Item.Settings()
-                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.IRON, 4, -2.4f))));
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.IRON, 2, -2))));
+
     public static final Item GOLDEN_BAT = registerItem("golden_bat",
             new SwordItem(ToolMaterials.GOLD, new Item.Settings()
-                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.GOLD, 4, -2.4f))));
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.GOLD, 2, -2))));
+
     public static final Item DIAMOND_BAT = registerItem("diamond_bat",
             new SwordItem(ToolMaterials.DIAMOND, new Item.Settings()
-                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.DIAMOND, 4, -2.4f))));
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.DIAMOND, 2, -2))));
+
     public static final Item NETHERITE_BAT = registerItem("netherite_bat",
             new SwordItem(ToolMaterials.NETHERITE, new Item.Settings().fireproof()
-                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.NETHERITE, 4, -2.4f))));
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.NETHERITE, 2, -2))));
+
     public static final Item OBSIDIAN_SWORD = registerItem("obsidian_sword",
-            new SwordItem(ToolMaterials.DIAMOND, new Item.Settings().fireproof()
-                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.DIAMOND, 4, -2.4f))) {
+            new SwordItem(ToolMaterials.NETHERITE, new Item.Settings().fireproof()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.NETHERITE, 7, -3))) {
     @Override
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
         if (entity instanceof PlayerEntity player && selected) {
-            player.addStatusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 210, 0, true, false));
+            player.addStatusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 20, 0, true, false));
         }
         super.inventoryTick(stack, world, entity, slot, selected);
     }
+                public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
+                    if (target instanceof LivingEntity) {
+                        target.setOnFireFor(5);
+                    }
+                    return super.postHit(stack, target, attacker);
+                }
 });
 
     public static final Item SPOON = registerItem("spoon",
             new ShovelItem(ToolMaterials.IRON, new Item.Settings().fireproof()
                     .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.IRON, 4, -2.4f))));
+
     public static final Item FESTIVE_AXE = registerItem("festive_axe",
             new AxeItem(ToolMaterials.NETHERITE, new Item.Settings()
                     .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.NETHERITE, 4, -2.4f))){
@@ -96,12 +126,15 @@ public class ModItems {
                     super.appendTooltip(stack, context, tooltip, type);
                 }
             });
+
     public static final Item LIFE_SABER = registerItem("life_saber",
             new SwordItem(ToolMaterials.DIAMOND, new Item.Settings()
                     .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.DIAMOND, 4, -2.4f))));
+
     public static final Item KENDO_STICK = registerItem("kendo_stick",
             new SwordItem(ToolMaterials.WOOD, new Item.Settings()
                     .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.WOOD, 4, -2.4f))));
+
     public static final Item SLAPSTICK_SWORD = registerItem("slapstick_sword",
             new SwordItem(ToolMaterials.NETHERITE, new Item.Settings().fireproof()
                     .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.NETHERITE, 4, -2.4f))));

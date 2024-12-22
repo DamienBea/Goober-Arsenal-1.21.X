@@ -17,6 +17,8 @@ public class ModFoodComponents {
             .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 200, 1), 1)
             .statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 200, 1), 1)
             .statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 400, 1), 1)
+            .statusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 400, 3), 1)
+            .statusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 400, 3), 1)
             .build();
 
 //    public static final FoodComponent GRILLED_CHEESE
