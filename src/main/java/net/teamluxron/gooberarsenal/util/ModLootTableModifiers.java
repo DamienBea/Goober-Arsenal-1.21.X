@@ -23,6 +23,10 @@ public class ModLootTableModifiers {
             Identifier.of("minecraft", "chests/bastion_hoglin_stable");
     private static final Identifier ABANDONED_MINESHAFT_CHEST =
             Identifier.of("minecraft", "chests/abandoned_mineshaft");
+    private static final Identifier BASTION_TREASURE_CHEST =
+            Identifier.of("minecraft", "chests/bastion_treasure");
+    private static final Identifier BASTION_OTHER_CHEST =
+            Identifier.of("minecraft", "chests/bastion_other");
 
 
     public static void modifyLootTables() {
@@ -54,6 +58,33 @@ public class ModLootTableModifiers {
 
                 tableBuilder.pool(poolBuilder.build());
             }
+            if (LootTables.BASTION_HOGLIN_STABLE_CHEST.equals(key)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(1f))
+                        .with(ItemEntry.builder(ModItems.GOOBER_UPGRADE_TEMPLATE))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)));
+
+                tableBuilder.pool(poolBuilder.build());
+            }
+            if (LootTables.BASTION_TREASURE_CHEST.equals(key)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(1f))
+                        .with(ItemEntry.builder(ModItems.GOOBER_UPGRADE_TEMPLATE))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)));
+
+                tableBuilder.pool(poolBuilder.build());
+            }
+            if (LootTables.BASTION_OTHER_CHEST.equals(key)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(1f))
+                        .with(ItemEntry.builder(ModItems.GOOBER_UPGRADE_TEMPLATE))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)));
+
+                tableBuilder.pool(poolBuilder.build());
+            }
 
             if (EntityType.CHICKEN.getLootTableId().equals(key)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
@@ -73,5 +104,6 @@ public class ModLootTableModifiers {
 
                 tableBuilder.pool(poolBuilder.build());
             }
+
         });
     }}
