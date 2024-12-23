@@ -32,6 +32,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     public void generate() {
         addDrop(ModBlocks.ANCIENT_CAGE);
         addDrop(ModBlocks.CAGITE_BLOCK);
+        addDrop(ModBlocks.KEVIN_BLOCK);
 
         //ore Drops
         addDrop(ModBlocks.KEVIN_ORE, oreDrops(ModBlocks.KEVIN_ORE, ModItems.KEVIN_SHARD));

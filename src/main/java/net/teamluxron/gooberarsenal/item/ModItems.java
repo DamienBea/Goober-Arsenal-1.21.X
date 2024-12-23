@@ -205,7 +205,7 @@ public class ModItems {
                 public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
                     if (target instanceof LivingEntity) {
                         Vec3d direction = target.getPos().subtract(attacker.getPos()).normalize();
-                        target.addVelocity(direction.x * 0.5, 0.6, direction.z * 0.5);
+                        target.addVelocity(direction.x * 0.5, 0.7, direction.z * 0.5);
                     }
                     return super.postHit(stack, target, attacker);
                 }
@@ -228,16 +228,16 @@ public class ModItems {
     //Armor
     public static final Item CAGITE_HELMET = registerItem("cagite_helmet",
             new ArmorItem(ModArmorMaterials.CAGITE_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
-                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))));
+                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(37))));
     public static final Item CAGITE_CHESTPLATE = registerItem("cagite_chestplate",
             new ArmorItem(ModArmorMaterials.CAGITE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
-                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(15))));
+                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(37))));
     public static final Item CAGITE_LEGGINGS = registerItem("cagite_leggings",
             new ArmorItem(ModArmorMaterials.CAGITE_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings()
-                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(15))));
+                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(37))));
     public static final Item CAGITE_BOOTS = registerItem("cagite_boots",
             new ArmorItem(ModArmorMaterials.CAGITE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
-                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))));
+                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(37))));
 
     //Consumables
     public static final Item SWITCH_CARTRIDGE = registerItem("switch_cartridge", new Item(new Item.Settings().food(ModFoodComponents.SWITCH_CARTRIDGE).fireproof()){
