@@ -31,7 +31,7 @@ public class ModConfiguredFeatures {
         List<OreFeatureConfig.Target> AncientCagite =
                 List.of(OreFeatureConfig.createTarget(netherReplaceables, ModBlocks.ANCIENT_CAGE.getDefaultState()));
 
-        register(context, KEVIN_ORE_KEY, Feature.ORE, new OreFeatureConfig(KevinOres, 8));
+        register(context, KEVIN_ORE_KEY, Feature.ORE, new OreFeatureConfig(KevinOres, 5));
         register(context, ANCIENT_CAGITE_KEY, Feature.ORE, new OreFeatureConfig(AncientCagite, 4));
     }
 

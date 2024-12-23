@@ -1,4 +1,4 @@
-// 1.21.1	2024-12-23T17:02:30.0826834	Goober Arsenal/Model Definitions
+// 1.21.1	2024-12-23T18:44:52.287659	Goober Arsenal/Model Definitions
 334460335505976c1a136ad09c77c2b88975e8b4 assets\gooberarsenal\models\item\cagite_helmet_gold_trim.json
 ca585eaf4fa2c4e1db6f24fc76ffb03f2f61f2a1 assets\gooberarsenal\models\item\cagite_helmet_emerald_trim.json
 1520785b4493861ecea62b86de4d2733e1a1c959 assets\gooberarsenal\models\item\cagite_leggings.json
@@ -51,6 +51,7 @@ d01dfe7af06285ddaad79a0230a4eb68bcf3748f assets\gooberarsenal\models\item\kevin_
 012d7ce2301c4259593e0313247c9c05844c7776 assets\gooberarsenal\models\item\cagite_helmet_diamond_trim.json
 879a131e0a6c43a12d8580b434a7d5a7d8efbb9e assets\gooberarsenal\models\item\cagite_leggings_netherite_trim.json
 39ec5897f6b45740318d670e39d15d4c7d7591d4 assets\gooberarsenal\models\item\iron_plate.json
+5ea858a1e3ba1e53f6588911b834f62896a001b2 assets\gooberarsenal\models\item\copper_apple.json
 f25788be69abe8557cad7de285101a761036f9bc assets\gooberarsenal\blockstates\kevin_block.json
 b50465fb0fdf64a75881001b32772ddc590597fc assets\gooberarsenal\models\item\cagite_leggings_diamond_trim.json
 9727e0c3f76c46a3246555d271697211c2ec9398 assets\gooberarsenal\models\item\sandvich.json

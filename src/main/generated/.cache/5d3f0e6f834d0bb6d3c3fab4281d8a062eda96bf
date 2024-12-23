@@ -1,4 +1,4 @@
-// 1.21.1	2024-12-23T17:02:30.0786822	Goober Arsenal/Recipes
+// 1.21.1	2024-12-23T18:44:52.2836585	Goober Arsenal/Recipes
 aecb7c9ff5fc4a551b675b236112adcb0fd11821 data\gooberarsenal\advancement\recipes\misc\business_case.json
 1539b0b705877c0e428182af1c1c8d7d1c1c8538 data\gooberarsenal\recipe\cagite_chestplate_smithing.json
 c3517b0d255ba5ae864693be76dc9fb099ad6524 data\gooberarsenal\recipe\iron_bat.json
@@ -29,6 +29,7 @@ b615c02a46361b5f6fbe01b4f3b7e262095ae3a4 data\gooberarsenal\recipe\kevin_shard_f
 1ce04bda164e0e5060b19ef8de61c3e51a023814 data\gooberarsenal\recipe\golden_bat.json
 676e41977f7ab31e1177da8ed7887ed9bb9c6c79 data\gooberarsenal\advancement\recipes\misc\bbb_from_hive.json
 f1232862473aedbe3064e4f342b78b9849300dd9 data\gooberarsenal\recipe\bbb_from_foot.json
+ef88f40a534bcbe2e6e4ce9fb491f66c3e39a51f data\gooberarsenal\recipe\copper_apple.json
 1173d498c4fa84def4e7e4039c82de23c9ddcf5a data\gooberarsenal\advancement\recipes\misc\bbb_from_nest.json
 d9f18eba293fc89d805ebb5e25be9b678890e1f4 data\gooberarsenal\recipe\netherite_bat_smithing.json
 044c8587c31394bf2a4af0e0da8ed66359fa3cc9 data\gooberarsenal\advancement\recipes\misc\iron_bat.json
@@ -48,6 +49,7 @@ f8804e78dd3960942134e02205ae657df8b933bf data\gooberarsenal\recipe\bbb_from_hive
 e0df6748a18c43e738bd50190c465d1cc078c9d4 data\gooberarsenal\advancement\recipes\misc\cagite_boots_smithing.json
 0e8241fc5c6a6cc98bb1941bc12e606658fa57f8 data\gooberarsenal\advancement\recipes\misc\kendo_stick.json
 f40b76ef43e71c43323e9f557ab316ba39d438f6 data\gooberarsenal\advancement\recipes\misc\obsidian_sword_smithing.json
+be2c8e71c28cc98576471d818b2de5162b4c4b3e data\gooberarsenal\advancement\recipes\misc\copper_apple.json
 b30f297e323b5dfbfb3e8782cf619806412e02fd data\gooberarsenal\advancement\recipes\misc\spoon.json
 7922cde6b52603e957c32570da86537d3f030ba1 data\gooberarsenal\advancement\recipes\misc\cagite_from_block.json
 0d76d50ab8f0bf42804226ec499cc78100f7226b data\gooberarsenal\advancement\recipes\misc\cagite_scrap_from_smelting_ancient_cage.json

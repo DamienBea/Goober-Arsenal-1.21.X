@@ -21,14 +21,17 @@ public class ModFoodComponents {
             .statusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 400, 0), 1)
             .build();
 
-    public static final FoodComponent SANDVICH = new FoodComponent.Builder().nutrition(8).saturationModifier(1f).alwaysEdible()
+    public static final FoodComponent SANDVICH = new FoodComponent.Builder().nutrition(8).saturationModifier(1f)
             .statusEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 20, 1), 1)
             .build();
 
     public static final FoodComponent CHOCOLATE_CHIP_PANCAKES = new FoodComponent.Builder().nutrition(6).saturationModifier(1f)
             .build();
 
-
+    public static final FoodComponent COPPER_APPLE = new FoodComponent.Builder().nutrition(4).saturationModifier(1.5f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.HASTE, 600, 2), 1)
+            .statusEffect(new StatusEffectInstance(StatusEffects.HUNGER, 600, 1), 1)
+            .build();
 
 //    public static final FoodComponent GRILLED_CHEESE
 

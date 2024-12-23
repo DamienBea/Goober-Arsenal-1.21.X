@@ -249,6 +249,7 @@ public class ModItems {
     public static final Item CONTRABAND_CASE = registerItem("contraband_case", new Item(new Item.Settings().food(ModFoodComponents.CONTRABAND_CASE).rarity(Rarity.EPIC)));
     public static final Item SANDVICH = registerItem("sandvich", new Item(new Item.Settings().food(ModFoodComponents.SANDVICH)));
     public static final Item CHOCOLATE_CHIP_PANCAKES = registerItem("chocolate_chip_pancakes", new Item(new Item.Settings().food(ModFoodComponents.CHOCOLATE_CHIP_PANCAKES)));
+    public static final Item COPPER_APPLE = registerItem("copper_apple", new Item(new Item.Settings().food(ModFoodComponents.COPPER_APPLE)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(GooberArsenal.MOD_ID, name), item);

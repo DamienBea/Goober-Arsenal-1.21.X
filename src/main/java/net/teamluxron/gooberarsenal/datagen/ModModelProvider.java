@@ -41,6 +41,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.CONTRABAND_CASE, Models.GENERATED);
         itemModelGenerator.register(ModItems.SANDVICH, Models.GENERATED);
         itemModelGenerator.register(ModItems.CHOCOLATE_CHIP_PANCAKES, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COPPER_APPLE, Models.GENERATED);
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.CAGITE_HELMET));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.CAGITE_CHESTPLATE));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.CAGITE_LEGGINGS));

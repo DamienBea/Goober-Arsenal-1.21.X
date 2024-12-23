@@ -229,6 +229,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.WHEAT), conditionsFromItem(Items.WHEAT))
                 .offerTo(exporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.COPPER_APPLE)
+                .pattern("CCC")
+                .pattern("CAC")
+                .pattern("CCC")
+                .input('A', Items.APPLE)
+                .input('C', Items.COPPER_INGOT)
+                .criterion(hasItem(Items.COPPER_INGOT), conditionsFromItem(Items.COPPER_INGOT))
+                .offerTo(exporter);
+
         //Smithing Recipes
         SmithingTransformRecipeJsonBuilder.create(
                 Ingredient.ofItems(ModItems.GOOBER_UPGRADE_TEMPLATE),

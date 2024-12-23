@@ -83,6 +83,7 @@ public class ModItemGroups {
                         entries.add(ModItems.SWITCH_CARTRIDGE);
                         entries.add(ModItems.CHOCOLATE_CHIP_PANCAKES);
                         entries.add(ModItems.SANDVICH);
+                        entries.add(ModItems.COPPER_APPLE);
                         entries.add(ModItems.CONTRABAND_CASE);
                     })
                     .build());
