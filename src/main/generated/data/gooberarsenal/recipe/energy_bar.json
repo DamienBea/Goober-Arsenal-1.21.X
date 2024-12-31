@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:cookie"
+    },
+    "E": {
+      "item": "minecraft:egg"
+    },
+    "K": {
+      "item": "gooberarsenal:kevin_block"
+    },
+    "S": {
+      "item": "minecraft:sugar"
+    },
+    "W": {
+      "item": "minecraft:wheat"
+    }
+  },
+  "pattern": [
+    "KCK",
+    "SWS",
+    "KEK"
+  ],
+  "result": {
+    "count": 1,
+    "id": "gooberarsenal:energy_bar"
+  }
+}

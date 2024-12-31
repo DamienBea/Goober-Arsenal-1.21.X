@@ -1,4 +1,4 @@
-// 1.21.1	2024-12-23T18:44:52.287659	Goober Arsenal/Model Definitions
+// 1.21.1	2024-12-31T13:35:59.6922274	Goober Arsenal/Model Definitions
 334460335505976c1a136ad09c77c2b88975e8b4 assets\gooberarsenal\models\item\cagite_helmet_gold_trim.json
 ca585eaf4fa2c4e1db6f24fc76ffb03f2f61f2a1 assets\gooberarsenal\models\item\cagite_helmet_emerald_trim.json
 1520785b4493861ecea62b86de4d2733e1a1c959 assets\gooberarsenal\models\item\cagite_leggings.json
@@ -23,7 +23,6 @@ e277e11cf015b885150c84b710079877bb98e1c9 assets\gooberarsenal\models\item\cagite
 d3bbf15ba1c2a958fe18b264a477823e0f18fade assets\gooberarsenal\models\item\cagite_chestplate.json
 177e4b98c237806bcb961137df7d06c1b7f7e1c2 assets\gooberarsenal\models\item\cagite_chestplate_lapis_trim.json
 5ba16b0a2e8b8543430f7d8cae2cf5d67280ae64 assets\gooberarsenal\models\item\cagite_helmet.json
-94a5fd1efbf8e865c108b4a7ea9ef882ab1589f5 assets\gooberarsenal\models\item\business_case.json
 d7ac9d83a784c048507cefe1001ddfb1bfad32bd assets\gooberarsenal\models\item\kevin_ore.json
 55f83939d3228b3b1c309ddf236c2cd3258252e0 assets\gooberarsenal\models\item\cagite_chestplate_gold_trim.json
 f55eca044ffd98a6617d3a38a0b534ec0c6131fb assets\gooberarsenal\models\item\cagite_leggings_lapis_trim.json
@@ -70,6 +69,6 @@ db14b599ad3da384f418c3151405e120dcb3c147 assets\gooberarsenal\blockstates\kevin_
 fa736c124e5f052b2387796613bc3cc23e551988 assets\gooberarsenal\models\item\cagite_helmet_copper_trim.json
 844cb951356d010ab6fa62fbce527ce108843cad assets\gooberarsenal\blockstates\deepslate_kevin_ore.json
 41245233922e5f531f488b899f36d8ba6db98c81 assets\gooberarsenal\models\item\ancient_cage.json
-03cfdb53f506da12e468fb3791e8434235c62b85 assets\gooberarsenal\models\item\contraband_case.json
 de64d761f00ddc51edab62ad30bc780af88997aa assets\gooberarsenal\models\item\switch_cartridge.json
 38e5d818d01f72905549216838bf22f555bccde9 assets\gooberarsenal\models\item\cagite_ingot.json
+d5dd5dd7f7e657bb1e444bf83c00e92f4ab9dfce assets\gooberarsenal\models\item\energy_bar.json

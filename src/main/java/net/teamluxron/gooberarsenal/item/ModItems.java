@@ -223,7 +223,7 @@ public class ModItems {
     public static final Item IRON_PLATE = registerItem("iron_plate", new Item(new Item.Settings()));
     public static final Item LIFE_SAVER = registerItem("life_saver", new Item(new Item.Settings()));
     public static final Item RUBBER_CHICKEN = registerItem("rubber_chicken", new Item(new Item.Settings()));
-    public static final Item BUSINESS_CASE = registerItem("business_case", new Item(new Item.Settings()));
+//    public static final Item BUSINESS_CASE = registerItem("business_case", new Item(new Item.Settings()));
 
     //Armor
     public static final Item CAGITE_HELMET = registerItem("cagite_helmet",
@@ -246,7 +246,7 @@ public class ModItems {
             tooltip.add(Text.translatable("tooltip.gooberarsenal.switch_cartridge"));
             super.appendTooltip(stack, context, tooltip, type);
         }});
-    public static final Item CONTRABAND_CASE = registerItem("contraband_case", new Item(new Item.Settings().food(ModFoodComponents.CONTRABAND_CASE).rarity(Rarity.EPIC)));
+    public static final Item ENERGY_BAR = registerItem("energy_bar", new Item(new Item.Settings().food(ModFoodComponents.ENERGY_BAR).rarity(Rarity.EPIC)));
     public static final Item SANDVICH = registerItem("sandvich", new Item(new Item.Settings().food(ModFoodComponents.SANDVICH)));
     public static final Item CHOCOLATE_CHIP_PANCAKES = registerItem("chocolate_chip_pancakes", new Item(new Item.Settings().food(ModFoodComponents.CHOCOLATE_CHIP_PANCAKES)));
     public static final Item COPPER_APPLE = registerItem("copper_apple", new Item(new Item.Settings().food(ModFoodComponents.COPPER_APPLE)));

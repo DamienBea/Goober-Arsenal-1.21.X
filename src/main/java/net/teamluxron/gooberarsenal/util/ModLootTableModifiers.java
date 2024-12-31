@@ -27,6 +27,16 @@ public class ModLootTableModifiers {
             Identifier.of("minecraft", "chests/bastion_treasure");
     private static final Identifier BASTION_OTHER_CHEST =
             Identifier.of("minecraft", "chests/bastion_other");
+    private static final Identifier NETHER_BRIDGE_CHEST =
+            Identifier.of("minecraft", "chests/nether_bridge");
+    private static final Identifier SIMPLE_DUNGEON_CHEST =
+            Identifier.of("minecraft", "chests/simple_dungeon");
+    private static final Identifier ANCIENT_CITY_CHEST =
+            Identifier.of("minecraft", "chests/ancient_city");
+    private static final Identifier DESERT_PYRAMID_CHEST =
+            Identifier.of("minecraft", "chests/desert_pyramid");
+    private static final Identifier END_CITY_TREASURE_CHEST =
+            Identifier.of("minecraft", "chests/end_city_treasure");
 
 
     public static void modifyLootTables() {
@@ -110,6 +120,114 @@ public class ModLootTableModifiers {
                         .conditionally(RandomChanceLootCondition.builder(0.35f))
                         .with(ItemEntry.builder(ModItems.COPPER_APPLE))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f)));
+
+                tableBuilder.pool(poolBuilder.build());
+            }
+            if (LootTables.BASTION_HOGLIN_STABLE_CHEST.equals(key)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.42f))
+                        .with(ItemEntry.builder(ModItems.CAGITE_INGOT))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)));
+
+                tableBuilder.pool(poolBuilder.build());
+            }
+            if (LootTables.BASTION_HOGLIN_STABLE_CHEST.equals(key)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.05f))
+                        .with(ItemEntry.builder(ModItems.CAGITE_SCRAP))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)));
+
+                tableBuilder.pool(poolBuilder.build());
+            }
+            if (LootTables.SIMPLE_DUNGEON_CHEST.equals(key)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.04f))
+                        .with(ItemEntry.builder(ModItems.ENERGY_BAR))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)));
+
+                tableBuilder.pool(poolBuilder.build());
+            }
+            if (LootTables.NETHER_BRIDGE_CHEST.equals(key)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.06f))
+                        .with(ItemEntry.builder(ModItems.ENERGY_BAR))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)));
+
+                tableBuilder.pool(poolBuilder.build());
+            }
+            if (LootTables.ABANDONED_MINESHAFT_CHEST.equals(key)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.01f))
+                        .with(ItemEntry.builder(ModItems.ENERGY_BAR))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)));
+
+                tableBuilder.pool(poolBuilder.build());
+            }
+            if (LootTables.ANCIENT_CITY_CHEST.equals(key)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.09f))
+                        .with(ItemEntry.builder(ModItems.ENERGY_BAR))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)));
+
+                tableBuilder.pool(poolBuilder.build());
+            }
+            if (LootTables.ANCIENT_CITY_CHEST.equals(key)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.09f))
+                        .with(ItemEntry.builder(ModItems.ENERGY_BAR))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)));
+
+                tableBuilder.pool(poolBuilder.build());
+            }
+            if (LootTables.DESERT_PYRAMID_CHEST.equals(key)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.03f))
+                        .with(ItemEntry.builder(ModItems.ENERGY_BAR))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)));
+
+                tableBuilder.pool(poolBuilder.build());
+            }
+            if (LootTables.BASTION_HOGLIN_STABLE_CHEST.equals(key)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.06f))
+                        .with(ItemEntry.builder(ModItems.ENERGY_BAR))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)));
+
+                tableBuilder.pool(poolBuilder.build());
+            }
+            if (LootTables.BASTION_TREASURE_CHEST.equals(key)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.06f))
+                        .with(ItemEntry.builder(ModItems.ENERGY_BAR))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)));
+
+                tableBuilder.pool(poolBuilder.build());
+            }
+            if (LootTables.BASTION_OTHER_CHEST.equals(key)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.06f))
+                        .with(ItemEntry.builder(ModItems.ENERGY_BAR))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)));
+
+                tableBuilder.pool(poolBuilder.build());
+            }
+            if (LootTables.END_CITY_TREASURE_CHEST.equals(key)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.15f))
+                        .with(ItemEntry.builder(ModItems.ENERGY_BAR))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)));
 
                 tableBuilder.pool(poolBuilder.build());
             }

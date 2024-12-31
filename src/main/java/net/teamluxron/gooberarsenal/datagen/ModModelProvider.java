@@ -37,8 +37,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.SWITCH_CARTRIDGE, Models.GENERATED);
         itemModelGenerator.register(ModItems.LIFE_SAVER, Models.GENERATED);
         itemModelGenerator.register(ModItems.RUBBER_CHICKEN, Models.GENERATED);
-        itemModelGenerator.register(ModItems.BUSINESS_CASE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.CONTRABAND_CASE, Models.GENERATED);
+//        itemModelGenerator.register(ModItems.BUSINESS_CASE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ENERGY_BAR, Models.GENERATED);
         itemModelGenerator.register(ModItems.SANDVICH, Models.GENERATED);
         itemModelGenerator.register(ModItems.CHOCOLATE_CHIP_PANCAKES, Models.GENERATED);
         itemModelGenerator.register(ModItems.COPPER_APPLE, Models.GENERATED);

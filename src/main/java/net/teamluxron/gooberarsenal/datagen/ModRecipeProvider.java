@@ -191,20 +191,23 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.BAMBOO), conditionsFromItem(Items.STRING))
                 .offerTo(exporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BUSINESS_CASE)
-                .pattern(" P ")
-                .pattern("P P")
-                .pattern(" P ")
-                .input('P', ModItems.IRON_PLATE)
-                .criterion(hasItem(ModItems.IRON_PLATE), conditionsFromItem(ModItems.IRON_PLATE))
-                .offerTo(exporter);
+//        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BUSINESS_CASE)
+//                .pattern(" P ")
+//                .pattern("P P")
+//                .pattern(" P ")
+//                .input('P', ModItems.IRON_PLATE)
+//                .criterion(hasItem(ModItems.IRON_PLATE), conditionsFromItem(ModItems.IRON_PLATE))
+//                .offerTo(exporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CONTRABAND_CASE)
-                .pattern("KKK")
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ENERGY_BAR)
                 .pattern("KCK")
-                .pattern("KKK")
+                .pattern("SWS")
+                .pattern("KEK")
                 .input('K', ModBlocks.KEVIN_BLOCK)
-                .input('C', ModItems.BUSINESS_CASE)
+                .input('C', Items.COOKIE)
+                .input('S', Items.SUGAR)
+                .input('E', Items.EGG)
+                .input('W', Items.WHEAT)
                 .criterion(hasItem(ModBlocks.KEVIN_BLOCK), conditionsFromItem(ModBlocks.KEVIN_BLOCK))
                 .offerTo(exporter);
 

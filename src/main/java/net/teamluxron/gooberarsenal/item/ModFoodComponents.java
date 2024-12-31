@@ -13,7 +13,7 @@ public class ModFoodComponents {
             .statusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 200), 0.70f)
             .build();
 
-    public static final FoodComponent CONTRABAND_CASE = new FoodComponent.Builder().nutrition(6).saturationModifier(1f).alwaysEdible()
+    public static final FoodComponent ENERGY_BAR = new FoodComponent.Builder().nutrition(6).saturationModifier(1f).alwaysEdible()
             .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 200, 1), 1)
             .statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 200, 1), 1)
             .statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 400, 1), 1)

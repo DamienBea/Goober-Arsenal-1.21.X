@@ -1,5 +1,4 @@
-// 1.21.1	2024-12-23T18:44:52.2836585	Goober Arsenal/Recipes
-aecb7c9ff5fc4a551b675b236112adcb0fd11821 data\gooberarsenal\advancement\recipes\misc\business_case.json
+// 1.21.1	2024-12-31T13:35:59.6872267	Goober Arsenal/Recipes
 1539b0b705877c0e428182af1c1c8d7d1c1c8538 data\gooberarsenal\recipe\cagite_chestplate_smithing.json
 c3517b0d255ba5ae864693be76dc9fb099ad6524 data\gooberarsenal\recipe\iron_bat.json
 6f61398716aaad240e48232a61b3aac35cddc899 data\gooberarsenal\recipe\stahp_sign_smithing.json
@@ -15,8 +14,7 @@ b45b1190377ddfeac33272bb4041a7c86f43124c data\gooberarsenal\recipe\goober_upgrad
 6092869a5d8e9e9addc70b54ce8cafe267c7543d data\gooberarsenal\advancement\recipes\misc\slapstick_sword_smithing.json
 0828b37415e58394b55244955fb8504121d421dd data\gooberarsenal\recipe\spoon.json
 e5d652ca39653c31a8cee8e1713a8bb24fc90089 data\gooberarsenal\advancement\recipes\misc\cagite_from_scrap.json
-290ff49539e56af686f292ae8aebf81d442c5c4c data\gooberarsenal\recipe\business_case.json
-de749c13e85b5d90eabb4b31362b0a58c5395b23 data\gooberarsenal\recipe\contraband_case.json
+637627475fbff6bf7749af0f2121f10997b6de89 data\gooberarsenal\advancement\recipes\misc\energy_bar.json
 155beafc96becab0a039bf43b51d6f5dbae4609e data\gooberarsenal\advancement\recipes\misc\netherite_bat_smithing.json
 c248f2426ff379246a2a77b7501d55682f137f9d data\gooberarsenal\advancement\recipes\misc\goober_upgrade_template.json
 be0ed8ef4d40d9ec58ac588c90c6cdf24308bb52 data\gooberarsenal\advancement\recipes\misc\cagite_leggings_smithing.json
@@ -24,7 +22,6 @@ b2d8993c3c2168decb8b5b47b69050671c14bc2b data\gooberarsenal\advancement\recipes\
 5d3db958e8a8b0dee91f421f17aa1496e7206f40 data\gooberarsenal\advancement\recipes\misc\frying_pan.json
 0c46c1fc5252395cf22e9d2cdac52fe1a1d85ac3 data\gooberarsenal\advancement\recipes\misc\life_saber.json
 f869dddd7c2d3dd37d0d16b2e28731c6b1e19080 data\gooberarsenal\advancement\recipes\misc\steel_pipe.json
-563efc40c6f3775f12d467cbec9a24ea1befa86c data\gooberarsenal\advancement\recipes\misc\contraband_case.json
 b615c02a46361b5f6fbe01b4f3b7e262095ae3a4 data\gooberarsenal\recipe\kevin_shard_from_blasting_kevin_ore.json
 1ce04bda164e0e5060b19ef8de61c3e51a023814 data\gooberarsenal\recipe\golden_bat.json
 676e41977f7ab31e1177da8ed7887ed9bb9c6c79 data\gooberarsenal\advancement\recipes\misc\bbb_from_hive.json
@@ -49,6 +46,7 @@ f8804e78dd3960942134e02205ae657df8b933bf data\gooberarsenal\recipe\bbb_from_hive
 e0df6748a18c43e738bd50190c465d1cc078c9d4 data\gooberarsenal\advancement\recipes\misc\cagite_boots_smithing.json
 0e8241fc5c6a6cc98bb1941bc12e606658fa57f8 data\gooberarsenal\advancement\recipes\misc\kendo_stick.json
 f40b76ef43e71c43323e9f557ab316ba39d438f6 data\gooberarsenal\advancement\recipes\misc\obsidian_sword_smithing.json
+6b0da869a213faf55908f498a2dab33c6648f58d data\gooberarsenal\recipe\energy_bar.json
 be2c8e71c28cc98576471d818b2de5162b4c4b3e data\gooberarsenal\advancement\recipes\misc\copper_apple.json
 b30f297e323b5dfbfb3e8782cf619806412e02fd data\gooberarsenal\advancement\recipes\misc\spoon.json
 7922cde6b52603e957c32570da86537d3f030ba1 data\gooberarsenal\advancement\recipes\misc\cagite_from_block.json
