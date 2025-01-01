@@ -202,7 +202,7 @@ public class ModItems {
                     if (target instanceof LivingEntity) {
                         target.addStatusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 60));
                         target.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 60));
-                        target.addStatusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST, 2, 60));
+                        target.addStatusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST, 60, 2));
                     }
                     return super.postHit(stack, target, attacker);
                 }

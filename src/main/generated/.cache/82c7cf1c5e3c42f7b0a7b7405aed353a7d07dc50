@@ -1,4 +1,4 @@
-// 1.21.1	2024-12-31T21:16:10.8471963	Goober Arsenal/Model Definitions
+// 1.21.1	2024-12-31T21:26:15.6668601	Goober Arsenal/Model Definitions
 334460335505976c1a136ad09c77c2b88975e8b4 assets\gooberarsenal\models\item\cagite_helmet_gold_trim.json
 ca585eaf4fa2c4e1db6f24fc76ffb03f2f61f2a1 assets\gooberarsenal\models\item\cagite_helmet_emerald_trim.json
 1520785b4493861ecea62b86de4d2733e1a1c959 assets\gooberarsenal\models\item\cagite_leggings.json
@@ -29,8 +29,8 @@ f55eca044ffd98a6617d3a38a0b534ec0c6131fb assets\gooberarsenal\models\item\cagite
 131117af0071838b8ae38ac8bb1feb85a2325e43 assets\gooberarsenal\models\item\cagite_boots_gold_trim.json
 56eebb7eea1f2af47701f5934cbbd5ac584eff20 assets\gooberarsenal\models\item\cagite_boots_quartz_trim.json
 d59e53c369daed6f71d82ab74273057a879461f5 assets\gooberarsenal\models\item\deepslate_kevin_ore.json
-9b5af3fbcc12b40ed7f2563e548517ebe14eef95 assets\gooberarsenal\models\item\cagite_chestplate_quartz_trim.json
 1e51be1b1c810a99216dad2df1ea8dc552a588a3 assets\gooberarsenal\models\item\cagite_chestplate_redstone_trim.json
+9b5af3fbcc12b40ed7f2563e548517ebe14eef95 assets\gooberarsenal\models\item\cagite_chestplate_quartz_trim.json
 e19f3da0fd4bb4e85c9251025c15ac54ed9b74e6 assets\gooberarsenal\models\item\cagite_boots_diamond_trim.json
 df464377e76c5891cdf65e215cfda1f10d06d94f assets\gooberarsenal\models\item\cagite_boots_redstone_trim.json
 7defd5e440f62795590f726c17d4244b8e7e48a2 assets\gooberarsenal\models\item\cagite_boots_amethyst_trim.json
