@@ -1,6 +1,5 @@
 package net.teamluxron.gooberarsenal.item;
 
-import net.fabricmc.fabric.api.item.v1.FabricItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
@@ -12,8 +11,6 @@ import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
-import net.minecraft.util.ActionResult;
-import net.minecraft.util.Hand;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.minecraft.util.math.Vec3d;
@@ -49,6 +46,7 @@ public class ModItems {
                 public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
                     if (target instanceof LivingEntity) {
                         target.addStatusEffect(new StatusEffectInstance(StatusEffects.POISON, 40));
+                        target.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOW_FALLING, 40));
                         Vec3d direction = target.getPos().subtract(attacker.getPos()).normalize();
                         target.addVelocity(direction.x * 0.5, 0.1, direction.z * 0.5);
                     }
@@ -58,7 +56,6 @@ public class ModItems {
                     if (entity instanceof PlayerEntity player && selected) {
                         player.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 20, 1, true, false));
                         player.addStatusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST, 20, 0, true, false));
-                        player.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOW_FALLING, 20, 0, true, false));
                     }
                     super.inventoryTick(stack, world, entity, slot, selected);
                 }
@@ -71,7 +68,7 @@ public class ModItems {
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         if (target instanceof LivingEntity) {
-            target.addStatusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 60));
+            target.addStatusEffect(new StatusEffectInstance(StatusEffects.BLINDNESS, 60));
             target.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 60));
         }
         return super.postHit(stack, target, attacker);
@@ -200,12 +197,12 @@ public class ModItems {
     public static final Item SLAPSTICK_SWORD = registerItem("slapstick_sword",
             new SwordItem(CagiteMaterial.INSTANCE, new Item.Settings().fireproof()
                     .attributeModifiers(SwordItem.createAttributeModifiers(CagiteMaterial.INSTANCE, 1, -2))){
-
                 @Override
                 public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
                     if (target instanceof LivingEntity) {
-                        Vec3d direction = target.getPos().subtract(attacker.getPos()).normalize();
-                        target.addVelocity(direction.x * 0.5, 0.7, direction.z * 0.5);
+                        target.addStatusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 60));
+                        target.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 60));
+                        target.addStatusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST, 2, 60));
                     }
                     return super.postHit(stack, target, attacker);
                 }
@@ -215,8 +212,7 @@ public class ModItems {
     //Crafting Ingredients
     public static final Item OBSIDIAN_HILT = registerItem("obsidian_hilt", new Item(new Item.Settings().fireproof()));
     public static final Item OBSIDIAN_HANDGUARD = registerItem("obsidian_handguard", new Item(new Item.Settings().fireproof()));
-    public static final Item GOOBER_UPGRADE_TEMPLATE = registerItem("goober_upgrade_template",
-            new Item(new Item.Settings().fireproof()));
+    public static final Item GOOBER_UPGRADE_TEMPLATE = registerItem("goober_upgrade_template", new Item(new Item.Settings().fireproof()));
     public static final Item CAGITE_SCRAP = registerItem("cagite_scrap", new Item(new Item.Settings().fireproof()));
     public static final Item CAGITE_INGOT = registerItem("cagite_ingot", new Item(new Item.Settings().fireproof()));
     public static final Item KEVIN_SHARD = registerItem("kevin_shard", new Item(new Item.Settings()));

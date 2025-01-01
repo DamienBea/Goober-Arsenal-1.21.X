@@ -1,4 +1,4 @@
-// 1.21.1	2024-12-31T13:35:59.6942291	Goober Arsenal/Tags for minecraft:block
+// 1.21.1	2024-12-31T21:16:10.8506976	Goober Arsenal/Tags for minecraft:block
 e28d3299bead89e4b81286990fc0f1b8fd09273e data\minecraft\tags\block\mineable\pickaxe.json
-d8ba9de33cf1872e84b3a68f9a2eb0923084909b data\minecraft\tags\block\needs_diamond_tool.json
 c4528cd2fcc374851fcbb9d759f5002f19d07592 data\minecraft\tags\block\needs_iron_tool.json
+d8ba9de33cf1872e84b3a68f9a2eb0923084909b data\minecraft\tags\block\needs_diamond_tool.json
