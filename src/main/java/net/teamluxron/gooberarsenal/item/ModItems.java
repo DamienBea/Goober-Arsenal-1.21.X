@@ -18,6 +18,7 @@ import net.minecraft.world.World;
 import net.teamluxron.gooberarsenal.GooberArsenal;
 
 import java.util.List;
+import java.util.function.Consumer;
 
 public class ModItems {
 
@@ -207,6 +208,16 @@ public class ModItems {
                     return super.postHit(stack, target, attacker);
                 }
             });
+
+    //Shields
+
+    public static final Item ROSE_QUARTZ_SHIELD = registerItem("rose_quartz_shield",
+            new RoseQuartzShield(new Item.Settings().maxDamage(500).fireproof()));
+
+
+
+
+
 
 
     //Crafting Ingredients
